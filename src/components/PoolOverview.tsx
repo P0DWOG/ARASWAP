@@ -31,6 +31,8 @@ function PoolOverview({
       keep: formatBNToPercentString(poolData.aprs.keep, 18),
       sharedStake: formatBNToPercentString(poolData.aprs.sharedStake, 18),
     },
+    apy: parseFloat(poolData.apy).toFixed(2),
+    utilization: parseFloat(poolData.utilization).toFixed(2),
     userBalanceUSD: commify(
       formatBNToString(userShareData?.usdBalance || Zero, 18, 2),
     ),
@@ -84,6 +86,19 @@ function PoolOverview({
               </span>
             </div>
           )}
+          {poolData?.apy !== "" && (
+            <div className="margin Apr">
+              <span className="label">APY</span>
+              <span
+                className={
+                  classNames({ plus: formattedData.aprs.keep }) +
+                  classNames({ minus: !formattedData.aprs.keep })
+                }
+              >
+                {formattedData.apy}
+              </span>
+            </div>
+          )}
           {poolData?.aprs.sharedStake.gt(Zero) && (
             <div className="margin Apr">
               <span className="label">SGT APR</span>
@@ -101,6 +116,19 @@ function PoolOverview({
             <span className="label">{t("currencyReserves")}</span>
             <span>{`$${formattedData.reserve}`}</span>
           </div>
+          {poolData?.utilization !== "" && (
+            <div className="margin Apr">
+              <span className="label">24h Volume</span>
+              <span
+                className={
+                  classNames({ plus: formattedData.utilization }) +
+                  classNames({ minus: !formattedData.utilization })
+                }
+              >
+                {formattedData.utilization}
+              </span>
+            </div>
+          )}
         </div>
         <div className="buttons">
           <Link to={`${poolRoute}/withdraw`}>
