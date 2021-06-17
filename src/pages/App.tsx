@@ -20,6 +20,7 @@ import ToastsProvider from "../providers/ToastsProvider"
 import Web3ReactManager from "../components/Web3ReactManager"
 import Withdraw from "./Withdraw"
 import fetchGasPrices from "../utils/updateGasPrices"
+import fetchSwapStats from "../utils/getSwapStats"
 import fetchTokenPricesUSD from "../utils/updateTokenPrices"
 import { useActiveWeb3React } from "../hooks"
 import { useDispatch } from "react-redux"
@@ -112,8 +113,12 @@ function GasAndTokenPrices({
   }, [dispatch])
   const fetchAndUpdateTokensPrice = useCallback(() => {
     fetchTokenPricesUSD(dispatch, chainId, library)
-  }, [dispatch, chainId, library])
+  }, [dispatch, library])
+  const fetchAndUpdateSwapStats = useCallback(() => {
+    void fetchSwapStats(dispatch)
+  }, [dispatch])
   usePoller(fetchAndUpdateGasPrice, BLOCK_TIME)
   usePoller(fetchAndUpdateTokensPrice, BLOCK_TIME * 3)
+  usePoller(fetchAndUpdateSwapStats, BLOCK_TIME * 3)
   return <>{children}</>
 }

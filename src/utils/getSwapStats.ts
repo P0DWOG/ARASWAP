@@ -1,9 +1,10 @@
 import { AppDispatch } from "../state"
 import retry from "async-retry"
+import { updateSwapStats } from "../state/application"
 
 const swapStatsURI = "https://ipfs.saddle.exchange/swap-stats.json"
 
-interface swapStatsReponse {
+interface SwapStatsReponse {
   [swapAddress: string]: {
     oneDayVolume: string
     APY: string
@@ -11,15 +12,21 @@ interface swapStatsReponse {
   }
 }
 
-export default function fetchSwapStats(dispatch: AppDispatch): void {
-  void retry(
-    () =>
-      fetch(`${swapStatsURI}`)
-        .then((res) => res.json())
-        .then(async (body: swapStatsReponse) => {
-          const result = 5 // TODO use the response to update poolData
-          //   dispatch(updateTokensPricesUSD(result))
-        }),
-    { retries: 3 },
-  )
+const fetchSwapStatsNow = (): Promise<SwapStatsReponse> =>
+  fetch(`${swapStatsURI}`)
+    .then((res) => res.json())
+    .then((swapStatsList: SwapStatsReponse) => {
+      // console.log(swapStatsList)
+      return swapStatsList
+    })
+
+export default async function fetchSwapStats(
+  dispatch: AppDispatch,
+): Promise<void> {
+  const dispatchUpdate = (swapStats: SwapStatsReponse) => {
+    dispatch(updateSwapStats(swapStats))
+  }
+  await retry(() => fetchSwapStatsNow().then(dispatchUpdate), {
+    retries: 3,
+  })
 }
