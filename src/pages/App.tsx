@@ -113,7 +113,7 @@ function GasAndTokenPrices({
   }, [dispatch])
   const fetchAndUpdateTokensPrice = useCallback(() => {
     fetchTokenPricesUSD(dispatch, chainId, library)
-  }, [dispatch, library])
+  }, [dispatch, chainId, library])
   const fetchAndUpdateSwapStats = useCallback(() => {
     void fetchSwapStats(dispatch)
   }, [dispatch])
