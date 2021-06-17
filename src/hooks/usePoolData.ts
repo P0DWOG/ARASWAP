@@ -335,6 +335,9 @@ export default function usePoolData(
         ),
         value: userPoolTokenBalances[i],
       }))
+      const swapStats = useSelector(
+        (state: AppState) => state.application.swapStats[POOL.addresses[1]],
+      )
       const poolData = {
         name: poolName,
         tokens: poolTokens,
@@ -344,9 +347,9 @@ export default function usePoolData(
         adminFee: adminFee as BigNumber,
         swapFee: swapFee as BigNumber,
         aParameter: aParameter as BigNumber,
-        volume: "XXX", // TODO
-        utilization: "XXX", // TODO
-        apy: "XXX", // TODO
+        volume: swapStats.oneDayVolume,
+        utilization: swapStats.TVL,
+        apy: swapStats.APY,
         aprs: {
           keep: poolName === BTC_POOL_NAME ? keepApr : Zero,
           sharedStake: poolName === VETH2_POOL_NAME ? sgtApr : Zero,
