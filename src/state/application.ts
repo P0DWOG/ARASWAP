@@ -7,9 +7,9 @@ interface GasPrices {
 }
 interface SwapStats {
   [swapAddress: string]: {
-    oneDayVolume?: string
-    APY?: string
-    TVL?: string
+    oneDayVolume: string
+    APY: string
+    TVL: string
   }
 }
 export interface TokenPricesUSD {

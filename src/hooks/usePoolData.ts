@@ -93,7 +93,7 @@ export default function usePoolData(
 ): PoolDataHookReturnType {
   const { account, library, chainId } = useActiveWeb3React()
   const swapContract = useSwapContract(poolName)
-  const { tokenPricesUSD, lastTransactionTimes } = useSelector(
+  const { tokenPricesUSD, lastTransactionTimes, swapStats } = useSelector(
     (state: AppState) => state.application,
   )
   const lastDepositTime = lastTransactionTimes[TRANSACTION_TYPES.DEPOSIT]
@@ -335,9 +335,9 @@ export default function usePoolData(
         ),
         value: userPoolTokenBalances[i],
       }))
-      const swapStats = useSelector(
-        (state: AppState) => state.application.swapStats[POOL.addresses[1]],
-      )
+      const { oneDayVolume, TVL, APY } = swapStats
+        ? swapStats[POOL.addresses[ChainId.MAINNET]]
+        : { oneDayVolume: "", TVL: "", APY: "" }
       const poolData = {
         name: poolName,
         tokens: poolTokens,
@@ -347,9 +347,9 @@ export default function usePoolData(
         adminFee: adminFee as BigNumber,
         swapFee: swapFee as BigNumber,
         aParameter: aParameter as BigNumber,
-        volume: swapStats.oneDayVolume,
-        utilization: swapStats.TVL,
-        apy: swapStats.APY,
+        volume: oneDayVolume,
+        utilization: TVL,
+        apy: APY,
         aprs: {
           keep: poolName === BTC_POOL_NAME ? keepApr : Zero,
           sharedStake: poolName === VETH2_POOL_NAME ? sgtApr : Zero,
@@ -381,6 +381,7 @@ export default function usePoolData(
     account,
     library,
     chainId,
+    swapStats,
   ])
 
   return poolData
