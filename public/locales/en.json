@@ -82,7 +82,7 @@
   "riskAudits3": "Please keep in mind that security audits don’t completely eliminate risks. Do not supply assets that you cannot afford to lose to ARAswap as a liquidity provider.",
   "riskAudits4": "Using ARAswap as an exchange user should be significantly less risky, but keep in mind there are still some risks.",
   "riskIntro": "Providing liquidity to ARAswap is highly risky. Before using the protocol, we highly recommend",
-  "riskIntro2": "contacting the primary unit for more information.",
+  "riskIntro2": "contacting the primary unit for more information,",
   "riskIntro3": "and understanding the risks involved with being a Liquidity Provider (LP) and/or using the AMM to trade pegged value crypto assets.",
   "riskLossOfPeg": "If one of the assets in a pool significantly depegs, it will effectively mean that pool liquidity providers will be left holding only that asset.",
   "route": "Route",
