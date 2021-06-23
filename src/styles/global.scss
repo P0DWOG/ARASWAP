@@ -43,7 +43,7 @@ ul {
   --background-lightgrey: #dfdde3;
   --background-element: rgba(255, 255, 244, 0.7);
   --background-element-hover: rgba(255, 255, 255, 0.88);
-  --background-main: #ffffe9 url("../assets/bg.gif") center/auto 60%
+  --background-main: #ffffe9 url("../assets/bg.png") center/auto 60%
     no-repeat fixed;
   --background-logo: #{$primary};
   --secondary-button: #{$light-blue};
@@ -75,11 +75,11 @@ body.dark {
   --background-lightgrey: #{$black80};
   --background-element: rgba(0, 0, 0, 0.56);
   --background-element-hover: rgba(0, 0, 0, 0.8);
-  --background-main: #000 url("../assets/bg.gif") center/auto 60% no-repeat
+  --background-main: #000 url("../assets/bg.png") center/auto 60% no-repeat
     fixed;
   --background-logo: #000;
   --secondary-button: #{$dark-purple};
-  --outline: #fff;
+  --outline: #000;
   --option-hover: #{$primary-blue-dark};
   --outline-gray: #8c8c94;
 
