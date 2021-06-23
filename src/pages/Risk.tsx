@@ -22,7 +22,7 @@ function Risk(): ReactElement {
         <h3>{t("audits")}</h3>
         <p>
           {t("riskAudits")}{" "}
-          <a href="aras.haus">
+          <a href="https://aras.haus">
             {t("riskAudits2")}
           </a>
           {"."}
