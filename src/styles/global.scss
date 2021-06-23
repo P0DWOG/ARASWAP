@@ -77,7 +77,7 @@ body.dark {
   --background-element-hover: rgba(0, 0, 0, 0.8);
   --background-main: #000 url("../assets/bg.gif") center/auto 60% no-repeat
     fixed;
-  --background-logo: #ffffe9;
+  --background-logo: #{$primary};
   --secondary-button: #{$dark-purple};
   --outline: #fff;
   --option-hover: #{$primary-blue-dark};
