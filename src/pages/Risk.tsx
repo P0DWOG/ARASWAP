@@ -14,16 +14,14 @@ function Risk(): ReactElement {
       <div className="content">
         <p>
           {t("riskIntro")}{" "}
-          <a href="https://aras.haus">
-            {t("riskIntro2")}
+          <a href="https://aras.haus">{t("riskIntro2")}
           </a>{" "}
           {t("riskIntro3")}
         </p>
         <h3>{t("audits")}</h3>
         <p>
           {t("riskAudits")}{" "}
-          <a href="https://aras.haus">
-            {t("riskAudits2")}
+          <a href="https://aras.haus">{t("riskAudits2")}
           </a>
           {"."}
           <br />
