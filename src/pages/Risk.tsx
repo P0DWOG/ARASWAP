@@ -16,8 +16,7 @@ function Risk(): ReactElement {
           {t("riskIntro")}{" "}
           <a href="https://github.com/saddle-finance/saddle-contract">
             {t("riskIntro2")}
-          </a>
-          {" "}
+          </a>{" "}
           {t("riskIntro3")}
         </p>
         <h3>{t("audits")}</h3>
