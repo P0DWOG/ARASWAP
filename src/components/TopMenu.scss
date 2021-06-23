@@ -24,6 +24,8 @@ header.top {
       border-radius: 52px;
       display: inline-block;
       margin-right: 0.4em;
+      width: 54px;
+      height: 54px;
       @include breakpoint(md) {
         margin-right: 0.2em;
       }
