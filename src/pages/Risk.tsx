@@ -14,7 +14,7 @@ function Risk(): ReactElement {
       <div className="content">
         <p>
           {t("riskIntro")}{" "}
-          <a href="https://aras.haus">
+          <a href="https://github.com/saddle-finance/saddle-contract">
             {t("riskIntro2")}
           </a>
           {" "}
