@@ -81,7 +81,7 @@
   "riskAudits2": "OpenZeppelin",
   "riskAudits3": "Please keep in mind that security audits don’t completely eliminate risks. Do not supply assets that you cannot afford to lose to Invader as a liquidity provider.",
   "riskAudits4": "Using Invader as an exchange user should be significantly less risky, but keep in mind there are still some risks.",
-  "riskIntro": "Invader [formerly ARAswap] is an aras.haus product. Before using the protocol, we highly recommend",
+  "riskIntro": "THIS IS AN ALPHA DEPLOYMENT FOR TESTING ONLY, DO NOT USE. Invader [formerly ARAswap] is an aras.haus product. Before using the protocol, we highly recommend",
   "riskIntro2": "reading the code,",
   "riskIntro3": "and understanding the risks involved with being a Liquidity Provider (LP) and/or using the AMM to trade pegged value crypto assets.",
   "riskLossOfPeg": "If one of the assets in a pool significantly depegs, it will effectively mean that pool liquidity providers will be left holding only that asset.",
