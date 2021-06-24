@@ -76,7 +76,7 @@
   "reviewDeposit": "Review Deposit",
   "reviewSwap": "Review Swap",
   "risk": "Risk",
-  "riskAdminKeys": "Invader's admin keys are controlled by a 3/7 Gnosis Safe multisig, controlled by the aras.haus DAO. This multisig is capable of pausing new deposits and trades in case of technical emergencies. Users will always be able to withdraw their funds, regardless of new deposits being paused. The multisig can also change the swap/withdrawal fees and the per pool/account deposit limits.",
+  "riskAdminKeys": "Invader's admin keys are controlled by a 3/7 Gnosis Safe multisig, managed by the aras.haus DAO. This multisig is capable of pausing new deposits and trades in case of technical emergencies. Users will always be able to withdraw their funds, regardless of new deposits being paused. The multisig can also change the swap/withdrawal fees and the per pool/account deposit limits.",
   "riskAudits": "The Invader smart contracts are being submitted to",
   "riskAudits2": "OpenZeppelin",
   "riskAudits3": "Please keep in mind that security audits don’t completely eliminate risks. Do not supply assets that you cannot afford to lose to Invader as a liquidity provider.",
