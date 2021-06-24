@@ -42,8 +42,10 @@ ul {
   --background: #FFFEFD;
   //--background: #ffffe9;
   --background-lightgrey: #dfdde3;
-  --background-element: rgba(255, 255, 244, 0.7);
-  --background-element-hover: rgba(255, 255, 255, 0.88);
+  --background-element: RGBA(213, 186, 219, 1);
+  //--background-element: rgba(255, 255, 244, 0.7);
+  //--background-element-hover: rgba(255, 255, 255, 0.88);
+  --background-element-hover: rgba(213, 187, 222, 0.88);
   --background-main: #fffEFD url("../assets/bg.png") center/auto 60%
     no-repeat fixed;
   --background-logo: #{$primary};
