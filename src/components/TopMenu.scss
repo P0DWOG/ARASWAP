@@ -44,18 +44,18 @@ header.top {
 
     & > li {
       display: inline;
-      margin-right: 30px;
+      margin-right: 40px;
       @include breakpoint(lg) {
-        margin-right: 22px;
+        margin-right: 32px;
       }
       @include breakpoint(md) {
-        margin-right: 14px;
+        margin-right: 24px;
       }
       @include breakpoint(sm) {
-        margin-right: 6px;
+        margin-right: 16px;
       }
       @include breakpoint(xs) {
-        margin-right: 2px;
+        margin-right: 12px;
       }
       &:last-child {
         margin-right: 0;
