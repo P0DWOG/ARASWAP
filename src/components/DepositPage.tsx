@@ -75,16 +75,16 @@ const DepositPage = (props: Props): ReactElement => {
       {poolData?.aprs?.keep?.apr.gt(Zero) &&
         myShareData?.lpTokenBalance.gt(0) && (
           <LPStakingBanner
-            stakingLink={"https://github.com/P0DWOG/ARASWAP-master"}
+            stakingLink={"https://dashboard.keep.network/liquidity"}
           />
         )}
       {poolData?.name === VETH2_POOL_NAME &&
         myShareData?.lpTokenBalance.gt(0) && (
-          <LPStakingBanner stakingLink={"https://github.com/P0DWOG/ARASWAP-master"} />
+          <LPStakingBanner stakingLink={"https://www.sharedstake.org/earn"} />
         )}
       {poolData?.name === ALETH_POOL_NAME &&
         myShareData?.lpTokenBalance.gt(0) && (
-          <LPStakingBanner stakingLink={"https://github.com/P0DWOG/ARASWAP-master"} />
+          <LPStakingBanner stakingLink={"https://app.alchemix.fi/farms"} />
         )}
 
       <div className="content">
@@ -256,5 +256,3 @@ const DepositPage = (props: Props): ReactElement => {
     </div>
   )
 }
-
-export default DepositPage
