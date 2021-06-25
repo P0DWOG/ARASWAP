@@ -48,7 +48,7 @@ export async function getThirdPartyDataForPool(
     amountsStaked: {},
   }
   if (poolName === ALETH_POOL_NAME) {
-    const rewardSymbol = "ARA"//"ALCX"
+    const rewardSymbol = "ALCX"
     const [apr, userStakedAmount] = await getAlEthData(
       library,
       chainId,
@@ -59,7 +59,7 @@ export async function getThirdPartyDataForPool(
     result.aprs.alchemix = { apr, symbol: rewardSymbol }
     result.amountsStaked.alchemix = userStakedAmount
   } else if (poolName === VETH2_POOL_NAME) {
-    const rewardSymbol = "ARA"//"SGT"
+    const rewardSymbol = "SGT"
     const [apr, userStakedAmount] = await getSharedStakeData(
       library,
       chainId,
@@ -70,7 +70,7 @@ export async function getThirdPartyDataForPool(
     result.aprs.sharedStake = { apr, symbol: rewardSymbol }
     result.amountsStaked.sharedStake = userStakedAmount
   } else if (poolName === BTC_POOL_NAME) {
-    const rewardSymbol = "ARA"//"KEEP"
+    const rewardSymbol = "KEEP"
     const [apr, userStakedAmount] = await getKeepData(
       library,
       chainId,
