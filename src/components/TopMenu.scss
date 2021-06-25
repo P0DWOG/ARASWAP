@@ -15,7 +15,7 @@ header.top {
   }
 
   h1 {
-    width: 10%;
+    width: 5%;
     margin: 0;
     margin-right: auto;
 
@@ -65,15 +65,15 @@ header.top {
         text-decoration: none;
         font-style: normal;
         font-weight: $normal;
-        font-size: 23px;
+        font-size: 20px;
         @include breakpoint(lg) {
-          font-size: 21px;
+          font-size: 18px;
         }
         @include breakpoint(md) {
-          font-size: 19px;
+          font-size: 17px;
         }
         @include breakpoint(sm) {
-          font-size: 17px;
+          font-size: 15px;
         }
         &:hover {
           opacity: 1;
@@ -89,7 +89,7 @@ header.top {
   }
   .walletStatus {
     margin-left: auto;
-    width: 10%;
+    width: 5%;
 
     .connection {
       // padding: 8px;
