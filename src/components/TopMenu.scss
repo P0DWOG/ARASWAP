@@ -3,12 +3,12 @@
 
 header.top {
   background-color: var(--background);
-  height: 118px;
+  height: 78px;
   padding-left: 46px;
   padding-right: 46px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   @include breakpoint(sm) {
     padding-left: 36px;
     padding-right: 36px;
