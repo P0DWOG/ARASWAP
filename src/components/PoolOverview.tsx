@@ -79,7 +79,7 @@ function PoolOverview({
             const symbol = poolData.aprs[key as Partners]?.symbol as string
             return poolData.aprs[key as Partners]?.apr.gt(Zero) ? (
               <div className="margin Apr" key={symbol}>
-                <span className="label">{symbol} APR</span>
+                <span className="label">ARA APR</span>
                 <span className="plus">
                   {formattedData.aprs[key as Partners] as string}
                 </span>
