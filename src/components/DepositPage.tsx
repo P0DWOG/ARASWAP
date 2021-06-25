@@ -256,3 +256,4 @@ const DepositPage = (props: Props): ReactElement => {
     </div>
   )
 }
+export default DepositPage
