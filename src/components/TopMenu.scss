@@ -7,7 +7,7 @@ header.top {
   padding-left: 46px;
   padding-right: 46px;
   display: flex;
-  justify-content: center;
+  justify-content: baseline;
   align-items: baseline;
   @include breakpoint(sm) {
     padding-left: 36px;
