@@ -11,7 +11,7 @@ header.top {
   align-items: center;
   @include breakpoint(sm) {
     padding-left: 36px;
-    padding-right: 50px;
+    padding-right: 40px;
   }
 
   h1 {
@@ -65,15 +65,15 @@ header.top {
         text-decoration: none;
         font-style: normal;
         font-weight: $normal;
-        font-size: 20px;
+        font-size: 22px;
         @include breakpoint(lg) {
-          font-size: 18px;
+          font-size: 20px;
         }
         @include breakpoint(md) {
-          font-size: 16px;
+          font-size: 18px;
         }
         @include breakpoint(sm) {
-          font-size: 14px;
+          font-size: 16px;
         }
         &:hover {
           opacity: 1;
