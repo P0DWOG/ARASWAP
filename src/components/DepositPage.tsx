@@ -136,8 +136,8 @@ const DepositPage = (props: Props): ReactElement => {
                     </a>{" "}
                     <span className="value">
                       {formatBNToPercentString(poolData.aprs.sharedStake.apr,
-                                               18,
-                                              )}
+                      18,
+                     )}
                     </span>
                   </div>
                 )}
