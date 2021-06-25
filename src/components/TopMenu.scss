@@ -24,11 +24,11 @@ header.top {
       background-color: #1C00ff00;
       border-radius: 52px;
       display: inline-block;
-      margin-right: 0.2em;
+      margin-right: 0.4em;
       width: 50px;
       height: 50px;
       @include breakpoint(md) {
-        margin-right: 0.1em;
+        margin-right: 0.2em;
       }
       &:hover {
         cursor: pointer;
@@ -89,7 +89,7 @@ header.top {
   }
   .walletStatus {
     margin-left: auto;
-    width: 10%;
+    width: 20%;
 
     .connection {
       // padding: 8px;
