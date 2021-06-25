@@ -118,7 +118,7 @@ const DepositPage = (props: Props): ReactElement => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <span>{`KEEP APR:`}</span>
+                      <span>{`ARA APR:`}</span>
                     </a>{" "}
                     <span className="value">
                       {formatBNToPercentString(poolData.aprs.keep.apr, 18)}
@@ -132,7 +132,7 @@ const DepositPage = (props: Props): ReactElement => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <span>{`SGT APR:`}</span>
+                      <span>{`ARA APR:`}</span>
                     </a>{" "}
                     <span className="value">
                       {formatBNToPercentString(
