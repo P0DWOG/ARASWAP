@@ -114,7 +114,7 @@ const DepositPage = (props: Props): ReactElement => {
                 {poolData?.aprs?.keep?.apr.gt(Zero) && (
                   <div className="transactionInfoItem">
                     <a
-                      href="https://github.com/P0DWOG/ARASWAP-master"
+                      href="https://github.com/P0DWOG/ARASWAP-master#readme"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
