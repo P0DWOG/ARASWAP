@@ -74,17 +74,17 @@ const DepositPage = (props: Props): ReactElement => {
       <TopMenu activeTab={"deposit"} />
       {poolData?.aprs?.keep?.apr.gt(Zero) &&
         myShareData?.lpTokenBalance.gt(0) && (
-          <LPStakingBanner
-            stakingLink={"https://github.com/P0DWOG/ARASWAP-master"}
-          />
+         // <LPStakingBanner
+         //   stakingLink={"https://github.com/P0DWOG/ARASWAP-master"}
+         // />
         )}
       {poolData?.name === VETH2_POOL_NAME &&
         myShareData?.lpTokenBalance.gt(0) && (
-          <LPStakingBanner stakingLink={"https://github.com/P0DWOG/ARASWAP-master"} />
+          //<LPStakingBanner stakingLink={"https://github.com/P0DWOG/ARASWAP-master"} />
         )}
       {poolData?.name === ALETH_POOL_NAME &&
         myShareData?.lpTokenBalance.gt(0) && (
-          <LPStakingBanner stakingLink={"https://github.com/P0DWOG/ARASWAP-master"} />
+          //<LPStakingBanner stakingLink={"https://github.com/P0DWOG/ARASWAP-master"} />
         )}
 
       <div className="content">
