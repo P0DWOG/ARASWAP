@@ -7,7 +7,7 @@ import coinbasewalletIcon from "../assets/icons/coinbasewallet.svg"
 import daiLogo from "../assets/icons/dai.svg"
 import metamaskIcon from "../assets/icons/metamask.svg"
 import renbtcLogo from "../assets/icons/renbtc.svg"
-import invaderLogo from "../assets/icons/logo.png"
+import saddleLogo from "../assets/icons/logo.png"
 import sbtcLogo from "../assets/icons/sbtc.svg"
 import sethLogo from "../assets/icons/seth.svg"
 import tbtcLogo from "../assets/icons/tbtc.svg"
@@ -132,7 +132,7 @@ export const BTC_SWAP_TOKEN = new Token(
   "bARA",
   "invaderbtc",
   "Invader TBTC/WBTC/RENBTC/SBTC",
-  invaderLogo,
+  saddleLogo,
 )
 
 export const STABLECOIN_SWAP_TOKEN = new Token(
@@ -141,7 +141,7 @@ export const STABLECOIN_SWAP_TOKEN = new Token(
   "uARA",
   "invaderusd",
   "Invader DAI/USDC/USDT",
-  invaderLogo,
+  saddleLogo,
 )
 
 export const VETH2_SWAP_TOKEN = new Token(
@@ -150,7 +150,7 @@ export const VETH2_SWAP_TOKEN = new Token(
   "veARA",
   "invaderveth2",
   "Invader WETH/vETH2",
-  invaderLogo,
+  saddleLogo,
 )
 
 export const ALETH_SWAP_TOKEN = new Token(
@@ -159,7 +159,7 @@ export const ALETH_SWAP_TOKEN = new Token(
   "eARA",
   "invadereth",
   "Invader WETH/alETH/sETH",
-  invaderLogo,
+  saddleLogo,
 )
 
 // Stablecoins
