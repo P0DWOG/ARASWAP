@@ -177,7 +177,7 @@ export function useApproveAndWithdraw(
       clearMessage()
       addToast({
         type: "success",
-        title: `${getFormattedTimeString()} Liquidity withdrawn`,
+        title: `${getFormattedTimeString()} Portal Closed 👾`,
       })
     } catch (e) {
       console.error(e)
