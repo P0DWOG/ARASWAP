@@ -196,7 +196,7 @@ export function useApproveAndDeposit(
       clearMessage()
       addToast({
         type: "success",
-        title: `${getFormattedTimeString()} Liquidity added, giddyup! 🤠`,
+        title: `${getFormattedTimeString()} Portal Opened 👾`,
       })
       return Promise.resolve()
     } catch (e) {
