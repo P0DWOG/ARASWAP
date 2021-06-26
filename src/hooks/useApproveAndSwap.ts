@@ -214,7 +214,7 @@ export function useApproveAndSwap(): (
       clearMessage()
       addToast({
         type: "success",
-        title: `${getFormattedTimeString()} Swap completed, giddyup! 🤠`,
+        title: `${getFormattedTimeString()} Transformation Complete 👾`,
       })
       return Promise.resolve()
     } catch (e) {
