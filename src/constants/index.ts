@@ -7,7 +7,7 @@ import coinbasewalletIcon from "../assets/icons/coinbasewallet.svg"
 import daiLogo from "../assets/icons/dai.svg"
 import metamaskIcon from "../assets/icons/metamask.svg"
 import renbtcLogo from "../assets/icons/renbtc.svg"
-import saddleLogo from "../assets/icons/logo.png"
+import invaderLogo from "../assets/icons/logo.png"
 import sbtcLogo from "../assets/icons/sbtc.svg"
 import sethLogo from "../assets/icons/seth.svg"
 import tbtcLogo from "../assets/icons/tbtc.svg"
@@ -129,37 +129,37 @@ export const ALETH_SWAP_TOKEN_CONTRACT_ADDRESSES: {
 export const BTC_SWAP_TOKEN = new Token(
   BTC_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleBTC",
-  "saddlebtc",
-  "Saddle TBTC/WBTC/RENBTC/SBTC",
-  saddleLogo,
+  "bARA",
+  "invaderbtc",
+  "Invader TBTC/WBTC/RENBTC/SBTC",
+  invaderLogo,
 )
 
 export const STABLECOIN_SWAP_TOKEN = new Token(
   STABLECOIN_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleUSD",
-  "saddleusd",
-  "Saddle DAI/USDC/USDT",
-  saddleLogo,
+  "uARA",
+  "invaderusd",
+  "Invader DAI/USDC/USDT",
+  invaderLogo,
 )
 
 export const VETH2_SWAP_TOKEN = new Token(
   VETH2_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleVETH2",
-  "saddleveth2",
-  "Saddle WETH/vETH2",
-  saddleLogo,
+  "veARA",
+  "invaderveth2",
+  "Invader WETH/vETH2",
+  invaderLogo,
 )
 
 export const ALETH_SWAP_TOKEN = new Token(
   ALETH_SWAP_TOKEN_CONTRACT_ADDRESSES,
   18,
-  "saddleALETH",
-  "saddlealeth",
-  "Saddle WETH/alETH/sETH",
-  saddleLogo,
+  "eARA",
+  "invadereth",
+  "Invader WETH/alETH/sETH",
+  invaderLogo,
 )
 
 // Stablecoins
@@ -410,7 +410,7 @@ export const SWAP_CONTRACT_GAS_ESTIMATES_MAP = {
   [SWAP_TYPES.TOKEN_TO_TOKEN]: BigNumber.from("2000000"), // 1,676,837
   [SWAP_TYPES.TOKEN_TO_SYNTH]: BigNumber.from("2000000"), // 1,655,502
   [SWAP_TYPES.SYNTH_TO_TOKEN]: BigNumber.from("1500000"), // 1,153,654
-  [SWAP_TYPES.SYNTH_TO_SYNTH]: BigNumber.from("999999999"), // 999,999,999 // TODO: https://github.com/saddle-finance/saddle-frontend/issues/471
+  [SWAP_TYPES.SYNTH_TO_SYNTH]: BigNumber.from("999999999"), // 999,999,999 // TODO: 
   addLiquidity: BigNumber.from("400000"), // 386,555
   removeLiquidityImbalance: BigNumber.from("350000"), // 318,231
   removeLiquidityOneToken: BigNumber.from("250000"), // 232,947
