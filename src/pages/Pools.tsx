@@ -15,7 +15,7 @@ function Pools(): ReactElement | null {
   const [btcPoolData, btcUserShareData] = usePoolData(BTC_POOL_NAME)
   const [usdPoolData, usdUserShareData] = usePoolData(STABLECOIN_POOL_NAME)
   const [veth2PoolData, veth2UserShareData] = usePoolData(VETH2_POOL_NAME)
-  //const [alethPoolData, alethUserShareData] = usePoolData(ALETH_POOL_NAME)
+  const [alethPoolData, alethUserShareData] = usePoolData(ALETH_POOL_NAME)
 
   return (
     <div className={styles.poolsPage}>
@@ -36,11 +36,11 @@ function Pools(): ReactElement | null {
           poolRoute={`/pools/usd`}
           userShareData={usdUserShareData}
         />
-        <PoolOverview
-          poolData={veth2PoolData}
-          poolRoute={`/pools/veth2`}
-          userShareData={veth2UserShareData}
-        />
+//        <PoolOverview
+//          poolData={veth2PoolData}
+//          poolRoute={`/pools/veth2`}
+//          userShareData={veth2UserShareData}
+//        />
       </div>
     </div>
   )
