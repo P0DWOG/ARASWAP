@@ -348,13 +348,7 @@ export const POOLS_MAP: PoolsMap = {
     poolTokens: VETH2_POOL_TOKENS,
     isSynthetic: false,
   },
-  [ALETH_POOL_NAME]: {
-    name: ALETH_POOL_NAME,
-    addresses: ALETH_SWAP_ADDRESSES,
-    lpToken: ALETH_SWAP_TOKEN,
-    poolTokens: ALETH_POOL_TOKENS,
-    isSynthetic: true,
-  },
+
 }
 
 // maps a symbol string to a token object
