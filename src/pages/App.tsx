@@ -49,13 +49,13 @@ export default function App(): ReactElement {
                     <Deposit {...props} poolName={BTC_POOL_NAME} />
                   )}
                 />
-                <Route
-                  exact
-                  path="/pools/veth2/deposit"
-                  render={(props) => (
-                    <Deposit {...props} poolName={VETH2_POOL_NAME} />
-                  )}
-                />
+//                <Route
+//                  exact
+//                  path="/pools/veth2/deposit"
+//                  render={(props) => (
+//                    <Deposit {...props} poolName={VETH2_POOL_NAME} />
+//                  )}
+//                />
                 <Route
                   exact
                   path="/pools/aleth/deposit"
@@ -77,13 +77,13 @@ export default function App(): ReactElement {
                     <Withdraw {...props} poolName={STABLECOIN_POOL_NAME} />
                   )}
                 />
-                <Route
-                  exact
-                  path="/pools/veth2/withdraw"
-                  render={(props) => (
-                    <Withdraw {...props} poolName={VETH2_POOL_NAME} />
-                  )}
-                />
+//                <Route
+//                  exact
+//                  path="/pools/veth2/withdraw"
+//                  render={(props) => (
+//                    <Withdraw {...props} poolName={VETH2_POOL_NAME} />
+//                  )}
+//                />
                 <Route
                   exact
                   path="/pools/aleth/withdraw"
