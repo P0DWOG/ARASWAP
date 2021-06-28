@@ -36,11 +36,11 @@ function Pools(): ReactElement | null {
           poolRoute={`/pools/usd`}
           userShareData={usdUserShareData}
         />
-//        <PoolOverview
-//          poolData={veth2PoolData}
-//          poolRoute={`/pools/veth2`}
-//          userShareData={veth2UserShareData}
-//        />
+        <PoolOverview
+          poolData={veth2PoolData}
+          poolRoute={`/pools/veth2`}
+          userShareData={veth2UserShareData}
+        />
       </div>
     </div>
   )
