@@ -2,7 +2,6 @@ import {
   ALETH_POOL_NAME,
   BTC_POOL_NAME,
   STABLECOIN_POOL_NAME,
-  VETH2_POOL_NAME,
 } from "../constants"
 import React, { ReactElement } from "react"
 
@@ -35,11 +34,6 @@ function Pools(): ReactElement | null {
           poolData={usdPoolData}
           poolRoute={`/pools/usd`}
           userShareData={usdUserShareData}
-        />
-        <PoolOverview
-          poolData={veth2PoolData}
-          poolRoute={`/pools/veth2`}
-          userShareData={veth2UserShareData}
         />
       </div>
     </div>
