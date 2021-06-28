@@ -348,7 +348,6 @@ export const POOLS_MAP: PoolsMap = {
     poolTokens: VETH2_POOL_TOKENS,
     isSynthetic: false,
   },
-
 }
 
 // maps a symbol string to a token object
