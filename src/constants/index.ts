@@ -13,7 +13,6 @@ import sethLogo from "../assets/icons/seth.svg"
 import tbtcLogo from "../assets/icons/tbtc.svg"
 import usdcLogo from "../assets/icons/usdc.svg"
 import usdtLogo from "../assets/icons/usdt.svg"
-import veth2Logo from "../assets/icons/veth2.svg"
 import walletconnectIcon from "../assets/icons/walletconnect.svg"
 import wbtcLogo from "../assets/icons/wbtc.svg"
 import wethLogo from "../assets/icons/weth.svg"
@@ -21,12 +20,10 @@ import wethLogo from "../assets/icons/weth.svg"
 export const NetworkContextName = "NETWORK"
 export const BTC_POOL_NAME = "BTC Portal"
 export const STABLECOIN_POOL_NAME = "USD Portal"
-export const VETH2_POOL_NAME = "vETH2 Portal"
 export const ALETH_POOL_NAME = "ETH Portal"
 export type PoolName =
   | typeof BTC_POOL_NAME
   | typeof STABLECOIN_POOL_NAME
-  | typeof VETH2_POOL_NAME
   | typeof ALETH_POOL_NAME
 
 export enum ChainId {
@@ -83,11 +80,6 @@ export const BTC_SWAP_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.HARDHAT]: "0x610178dA211FEF7D417bC0e6FeD39F05609AD788",
 }
 
-export const VETH2_SWAP_ADDRESSES: { [chainId in ChainId]: string } = {
-  [ChainId.MAINNET]: "0xdec2157831D6ABC3Ec328291119cc91B337272b5",
-  [ChainId.HARDHAT]: "0x6F62d12568c81Dc0fb38426B7Cdba2d265f89B29",
-}
-
 export const ALETH_SWAP_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0xa6018520EAACC06C30fF2e1B3ee2c7c22e64196a",
   [ChainId.HARDHAT]: "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
@@ -112,13 +104,6 @@ export const BTC_SWAP_TOKEN_CONTRACT_ADDRESSES: {
   [ChainId.HARDHAT]: "0x6F1216D1BFe15c98520CA1434FC1d9D57AC95321",
 }
 
-export const VETH2_SWAP_TOKEN_CONTRACT_ADDRESSES: {
-  [chainId in ChainId]: string
-} = {
-  [ChainId.MAINNET]: "0xe37E2a01feA778BC1717d72Bd9f018B6A6B241D5",
-  [ChainId.HARDHAT]: "0xd44a47B19a7862709588D574f39480f9C4DED1A6",
-}
-
 export const ALETH_SWAP_TOKEN_CONTRACT_ADDRESSES: {
   [chainId in ChainId]: string
 } = {
@@ -141,15 +126,6 @@ export const STABLECOIN_SWAP_TOKEN = new Token(
   "uARA",
   "invaderusd",
   "Invader DAI/USDC/USDT",
-  saddleLogo,
-)
-
-export const VETH2_SWAP_TOKEN = new Token(
-  VETH2_SWAP_TOKEN_CONTRACT_ADDRESSES,
-  18,
-  "veARA",
-  "invaderveth2",
-  "Invader WETH/vETH2",
   saddleLogo,
 )
 
@@ -273,21 +249,6 @@ export const WETH = new Token(
   wethLogo,
 )
 
-const VETH2_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
-  [ChainId.MAINNET]: "0x898BAD2774EB97cF6b94605677F43b41871410B1",
-  [ChainId.HARDHAT]: "0x59b670e9fA9D0A427751Af201D676719a970857b",
-}
-export const VETH2 = new Token(
-  VETH2_CONTRACT_ADDRESSES,
-  18,
-  "VETH2",
-  "ethereum",
-  "vETH2",
-  veth2Logo,
-)
-
-export const VETH2_POOL_TOKENS = [WETH, VETH2]
-
 const ALETH_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0x0100546F2cD4C9D97f798fFC9755E47865FF7Ee6",
   [ChainId.HARDHAT]: "0x09635F643e140090A9A8Dcd712eD6285858ceBef",
@@ -339,13 +300,6 @@ export const POOLS_MAP: PoolsMap = {
     addresses: STABLECOIN_SWAP_ADDRESSES,
     lpToken: STABLECOIN_SWAP_TOKEN,
     poolTokens: STABLECOIN_POOL_TOKENS,
-    isSynthetic: false,
-  },
-  [VETH2_POOL_NAME]: {
-    name: VETH2_POOL_NAME,
-    addresses: VETH2_SWAP_ADDRESSES,
-    lpToken: VETH2_SWAP_TOKEN,
-    poolTokens: VETH2_POOL_TOKENS,
     isSynthetic: false,
   },
   [ALETH_POOL_NAME]: {
