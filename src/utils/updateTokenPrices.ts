@@ -1,4 +1,4 @@
-import { ChainId, TOKENS_MAP, STABLECOIN_SWAP_ADDRESSES } from "../constants"
+import { ChainId, STABLECOIN_SWAP_ADDRESSES, TOKENS_MAP } from "../constants"
 import { formatUnits, parseUnits } from "@ethersproject/units"
 
 import { AppDispatch } from "../state"
