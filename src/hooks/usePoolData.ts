@@ -41,12 +41,6 @@ export interface PoolDataType {
   utilization: string // TODO: calculate
   virtualPrice: BigNumber
   volume: string // TODO: calculate
-  aprs: Partial<
-    Record<
-      Partners,
-      {
-        apr: BigNumber
-        symbol: string
       }
     >
   >
@@ -61,7 +55,6 @@ export interface UserShareType {
   tokens: TokenShareType[]
   usdBalance: BigNumber
   underlyingTokensAmount: BigNumber
-  amountsStaked: Partial<Record<Partners, BigNumber>>
 }
 
 export type PoolDataHookReturnType = [PoolDataType, UserShareType | null]
@@ -78,7 +71,6 @@ const emptyPoolData = {
   utilization: "",
   virtualPrice: Zero,
   volume: "",
-  aprs: {},
   lpTokenPriceUSD: Zero,
 } as PoolDataType
 
@@ -206,15 +198,8 @@ export default function usePoolData(
           )
       }
       // User share data
-      const userLpTokenBalanceStakedElsewhere = Object.keys(
-        amountsStaked,
-      ).reduce(
-        (sum, key) => sum.add(amountsStaked[key as Partners] || Zero),
-        Zero,
-      )
       // lpToken balance in wallet as a % of total lpTokens, plus lpTokens staked elsewhere
-      const userShare = calculatePctOfTotalShare(userLpTokenBalance).add(
-        calculatePctOfTotalShare(userLpTokenBalanceStakedElsewhere),
+      const userShare = calculatePctOfTotalShare(userLpTokenBalance),
       )
       const userPoolTokenBalances = tokenBalances.map((balance) => {
         return userShare.mul(balance).div(BigNumber.from(10).pow(18))
@@ -269,7 +254,6 @@ export default function usePoolData(
         volume: "XXX", // TODO
         utilization: "XXX", // TODO
         apy: "XXX", // TODO
-        aprs,
         lpTokenPriceUSD,
       }
       const userShareData = account
@@ -281,9 +265,6 @@ export default function usePoolData(
             tokens: userPoolTokens,
             currentWithdrawFee: userCurrentWithdrawFee as BigNumber,
             lpTokenBalance: userLpTokenBalance,
-            amountsStaked: Object.keys(amountsStaked).reduce((acc, key) => {
-              const amount = amountsStaked[key as Partners]
-              return key
                 ? {
                     ...acc,
                     [key]: amount
