@@ -19,10 +19,6 @@ import {
   Token,
   USDC,
   USDT,
-  VETH2,
-  VETH2_POOL_NAME,
-  VETH2_SWAP_ADDRESSES,
-  VETH2_SWAP_TOKEN,
   WBTC,
   WETH,
 } from "../constants"
@@ -103,14 +99,6 @@ export function useSwapUSDContract(): SwapFlashLoan | null {
   ) as SwapFlashLoan
 }
 
-export function useSwapVETH2Contract(): SwapFlashLoan | null {
-  const { chainId } = useActiveWeb3React()
-  return useContract(
-    chainId ? VETH2_SWAP_ADDRESSES[chainId] : undefined,
-    SWAP_FLASH_LOAN_ABI,
-  ) as SwapFlashLoan
-}
-
 export function useSwapALETHContract(): SwapFlashLoanNoWithdrawFee | null {
   const { chainId } = useActiveWeb3React()
   return useContract(
@@ -129,14 +117,11 @@ export function useSwapContract(
 ): SwapGuarded | SwapFlashLoan | SwapFlashLoanNoWithdrawFee | null {
   const usdSwapContract = useSwapUSDContract()
   const btcSwapContract = useSwapBTCContract()
-  const veth2SwapContract = useSwapVETH2Contract()
   const alethSwapContract = useSwapALETHContract()
   if (poolName === BTC_POOL_NAME) {
     return btcSwapContract
   } else if (poolName === STABLECOIN_POOL_NAME) {
     return usdSwapContract
-  } else if (poolName === VETH2_POOL_NAME) {
-    return veth2SwapContract
   } else if (poolName === ALETH_POOL_NAME) {
     return alethSwapContract
   }
@@ -179,7 +164,6 @@ export function useAllContracts(): AllContractsObject | null {
   const usdcContract = useTokenContract(USDC) as Erc20
   const usdtContract = useTokenContract(USDT) as Erc20
   const wethContract = useTokenContract(WETH) as Erc20
-  const veth2Contract = useTokenContract(VETH2) as Erc20
   const alethContract = useTokenContract(ALETH) as Erc20
   const sethContract = useTokenContract(SETH) as Erc20
   const btcSwapTokenContract = useTokenContract(
@@ -187,9 +171,6 @@ export function useAllContracts(): AllContractsObject | null {
   ) as LpTokenGuarded
   const stablecoinSwapTokenContract = useTokenContract(
     STABLECOIN_SWAP_TOKEN,
-  ) as LpTokenUnguarded
-  const veth2SwapTokenContract = useTokenContract(
-    VETH2_SWAP_TOKEN,
   ) as LpTokenUnguarded
   const alethSwapTokenContract = useTokenContract(
     ALETH_SWAP_TOKEN,
@@ -206,12 +187,10 @@ export function useAllContracts(): AllContractsObject | null {
         usdcContract,
         usdtContract,
         wethContract,
-        veth2Contract,
         alethContract,
         sethContract,
         btcSwapTokenContract,
         stablecoinSwapTokenContract,
-        veth2SwapTokenContract,
         alethSwapTokenContract,
       ].some(Boolean)
     )
@@ -225,12 +204,10 @@ export function useAllContracts(): AllContractsObject | null {
       [USDC.symbol]: usdcContract,
       [USDT.symbol]: usdtContract,
       [WETH.symbol]: wethContract,
-      [VETH2.symbol]: veth2Contract,
       [ALETH.symbol]: alethContract,
       [SETH.symbol]: sethContract,
       [BTC_SWAP_TOKEN.symbol]: btcSwapTokenContract,
       [STABLECOIN_SWAP_TOKEN.symbol]: stablecoinSwapTokenContract,
-      [VETH2_SWAP_TOKEN.symbol]: veth2SwapTokenContract,
       [ALETH_SWAP_TOKEN.symbol]: alethSwapTokenContract,
     }
   }, [
@@ -242,12 +219,10 @@ export function useAllContracts(): AllContractsObject | null {
     usdcContract,
     usdtContract,
     wethContract,
-    veth2Contract,
     alethContract,
     sethContract,
     btcSwapTokenContract,
     stablecoinSwapTokenContract,
-    veth2SwapTokenContract,
     alethSwapTokenContract,
   ])
 }
