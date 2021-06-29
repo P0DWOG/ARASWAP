@@ -200,4 +200,3 @@ async function getAlEthData(
     .div(totalDepositedUSD) // 1e18
   return [alcxApr, userStakedAmount]
 }
-
