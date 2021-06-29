@@ -42,7 +42,6 @@ export interface PoolDataType {
   virtualPrice: BigNumber
   volume: string // TODO: calculate
       }
-  >
   lpTokenPriceUSD: BigNumber
 }
 
