@@ -3,7 +3,6 @@ import {
   BTC_POOL_NAME,
   ChainId,
   PoolName,
-  VETH2_POOL_NAME,
 } from "../constants"
 import { AddressZero, Zero } from "@ethersproject/constants"
 import { Contract, Provider } from "ethcall"
@@ -58,17 +57,6 @@ export async function getThirdPartyDataForPool(
     )
     result.aprs.alchemix = { apr, symbol: rewardSymbol }
     result.amountsStaked.alchemix = userStakedAmount
-  } else if (poolName === VETH2_POOL_NAME) {
-    const rewardSymbol = "SGT"
-    const [apr, userStakedAmount] = await getSharedStakeData(
-      library,
-      chainId,
-      lpTokenPriceUSD,
-      tokenPricesUSD?.[rewardSymbol],
-      accountId,
-    )
-    result.aprs.sharedStake = { apr, symbol: rewardSymbol }
-    result.amountsStaked.sharedStake = userStakedAmount
   } else if (poolName === BTC_POOL_NAME) {
     const rewardSymbol = "KEEP"
     const [apr, userStakedAmount] = await getKeepData(
