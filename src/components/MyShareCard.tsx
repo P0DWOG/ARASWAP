@@ -48,8 +48,6 @@ function MyShareCard({ data }: Props): ReactElement | null {
         <div className="infoItem">
           <span className="label bold">{`${t("totalAmount")}: `}</span>
           <span className="value">{formattedData.amount}</span>
-            ) : null
-          })}
         </div>
       </div>
       <div className="currency">
