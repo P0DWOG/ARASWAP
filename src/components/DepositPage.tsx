@@ -214,7 +214,8 @@ const DepositPage = (props: Props): ReactElement => {
           {currentModal === "confirm" ? <ConfirmTransaction /> : null}
         </Modal>
       </div>
-    )</div>
+    </div>
+    )
   )
 }
 export default DepositPage
