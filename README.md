@@ -22,3 +22,6 @@ REACT_APP_NETWORK_URL="https://eth-mainnet.alchemyapi.io/v2/YOUR_KEY_HERE"
 ```bash
 $ npm run start
 ```
+
+
+
