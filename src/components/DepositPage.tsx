@@ -103,7 +103,6 @@ const DepositPage = (props: Props): ReactElement => {
                       rel="noopener noreferrer"
                     >
                   </div>
-                )}
                 <div className="transactionInfoItem">
                   {transactionData.priceImpact.gte(0) ? (
                     <span className="bonus">{`${t("bonus")}: `}</span>
