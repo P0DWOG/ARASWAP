@@ -195,15 +195,6 @@ export default function usePoolData(
             .mul(BigNumber.from(10).pow(18))
             .div(tokenBalancesSum)
 
-      const { aprs, amountsStaked } = await getThirdPartyDataForPool(
-        library,
-        chainId,
-        account,
-        poolName,
-        tokenPricesUSD,
-        lpTokenPriceUSD,
-      )
-
       function calculatePctOfTotalShare(lpTokenAmount: BigNumber): BigNumber {
         // returns the % of total lpTokens
         return lpTokenAmount
