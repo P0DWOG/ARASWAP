@@ -1,4 +1,4 @@
-import { ChainId, TOKENS_MAP, VETH2_SWAP_ADDRESSES } from "../constants"
+import { ChainId, TOKENS_MAP, STABLECOIN_SWAP_ADDRESSES } from "../constants"
 import { formatUnits, parseUnits } from "@ethersproject/units"
 
 import { AppDispatch } from "../state"
@@ -76,7 +76,7 @@ async function getVeth2Price(
   if (!etherPrice || !library) return 0
   try {
     const swapContract = getContract(
-      chainId ? VETH2_SWAP_ADDRESSES[chainId] : "",
+      chainId ? STABLECOIN_SWAP_ADDRESSES[chainId] : "",
       SWAP_ABI,
       library,
     ) as SwapFlashLoan
