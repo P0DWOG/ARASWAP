@@ -70,16 +70,8 @@ const DepositPage = (props: Props): ReactElement => {
 
   return (
     <div className="deposit">
-      <TopMenu activeTab={"deposit"} />
-      {poolData?.aprs?.keep?.apr.gt(Zero) &&
-        myShareData?.lpTokenBalance.gt(0) && (
-          <LPStakingBanner
-            stakingLink={"https://dashboard.keep.network/liquidity"}
-          />
-        )}
       {poolData?.name === ALETH_POOL_NAME &&
         myShareData?.lpTokenBalance.gt(0) && (
-          <LPStakingBanner stakingLink={"https://app.alchemix.fi/farms"} />
         )}
 
       <div className="content">
@@ -106,35 +98,11 @@ const DepositPage = (props: Props): ReactElement => {
             ))}
             <div className={classNames("transactionInfoContainer", "show")}>
               <div className="transactionInfo">
-                {poolData?.aprs?.keep?.apr.gt(Zero) && (
-                  <div className="transactionInfoItem">
                     <a
                       href="https://github.com/P0DWOG/ARASWAP-master#readme"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <span>{`ARA APR:`}</span>
-                    </a>{" "}
-                    <span className="value">
-                      {formatBNToPercentString(poolData.aprs.keep.apr, 18)}
-                    </span>
-                  </div>
-                )}
-                {poolData?.aprs?.sharedStake?.apr.gt(Zero) && (
-                  <div className="transactionInfoItem">
-                    <a
-                      href="https://github.com/P0DWOG/ARASWAP-master"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <span>{`ARA APR:`}</span>
-                    </a>{" "}
-                    <span className="value">
-                      {formatBNToPercentString(
-                        poolData.aprs.sharedStake.apr,
-                        18,
-                      )}
-                    </span>
                   </div>
                 )}
                 <div className="transactionInfoItem">
