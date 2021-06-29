@@ -109,21 +109,6 @@ async function getKeepData(
   return [apr, userStakedAmount]
 }
 
-async function getSharedStakeData(
-  library: Web3Provider,
-  chainId: ChainId,
-  lpTokenPrice: BigNumber,
-  sgtPrice = 0,
-  accountId?: string | null,
-): Promise<[BigNumber, BigNumber]> {
-  // https://github.com/SharedStake/SharedStake-ui/blob/main/src/components/Earn/geyser.vue#L336
-  if (
-    library == null ||
-    lpTokenPrice.eq("0") ||
-    sgtPrice === 0 ||
-    chainId !== ChainId.MAINNET
-  )
-    return [Zero, Zero]
   const ethcallProvider = new Provider() as MulticallProvider
   await ethcallProvider.init(library)
   const rewardsContract = new Contract(
