@@ -1,4 +1,4 @@
-import { ALETH_POOL_NAME, BTC_POOL_NAME, ChainId, PoolName, } from "../constants"
+import { ALETH_POOL_NAME, BTC_POOL_NAME, ChainId, PoolName } from "../constants"
 import { AddressZero, Zero } from "@ethersproject/constants"
 import { Contract, Provider } from "ethcall"
 import { MulticallContract, MulticallProvider } from "../types/ethcall"
