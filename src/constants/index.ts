@@ -286,7 +286,7 @@ export const VETH2 = new Token(
   veth2Logo,
 )
 
-export const VETH2_POOL_TOKENS = [WETH, VETH2]
+export const VETH2_POOL_TOKENS = [WETH]
 
 const ALETH_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0x0100546F2cD4C9D97f798fFC9755E47865FF7Ee6",
