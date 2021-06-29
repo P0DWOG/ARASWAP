@@ -42,6 +42,15 @@ export interface PoolDataType {
   utilization: string // TODO: calculate
   virtualPrice: BigNumber
   volume: string // TODO: calculate
+  aprs: Partial<
+    Record<
+      Partners,
+      {
+        apr: BigNumber
+        symbol: string
+      }
+    >
+  >
   lpTokenPriceUSD: BigNumber
 }
 
