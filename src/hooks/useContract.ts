@@ -251,5 +251,3 @@ export function useAllContracts(): AllContractsObject | null {
     alethSwapTokenContract,
   ])
 }
-
-
