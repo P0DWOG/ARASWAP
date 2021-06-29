@@ -101,7 +101,7 @@ const DepositPage = (props: Props): ReactElement => {
                       href="https://github.com/P0DWOG/ARASWAP-master#readme"
                       target="_blank"
                       rel="noopener noreferrer"
-                    >
+                      ></a>
                   </div>
                 <div className="transactionInfoItem">
                   {transactionData.priceImpact.gte(0) ? (
