@@ -22,7 +22,7 @@ export const NetworkContextName = "NETWORK"
 export const BTC_POOL_NAME = "BTC Portal"
 export const STABLECOIN_POOL_NAME = "USD Portal"
 export const VETH2_POOL_NAME = "vETH2 Portal"
-export const ALETH_POOL_NAME = "sETH Portal"
+export const ALETH_POOL_NAME = "ETH Portal"
 export type PoolName =
   | typeof BTC_POOL_NAME
   | typeof STABLECOIN_POOL_NAME
