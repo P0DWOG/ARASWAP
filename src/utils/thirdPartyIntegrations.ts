@@ -158,8 +158,6 @@ async function getKeepData(
     .div(totalStakedUSD) // 1e18
   const apr = pctYieldForPool.mul(annualCoefficient) // 1e18
 
-  return [apr, userStakedAmount]
-
 async function getAlEthData(
   library: Web3Provider,
   chainId: ChainId,
