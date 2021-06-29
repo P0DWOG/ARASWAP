@@ -133,14 +133,6 @@ async function getKeepData(
   const nowSeconds = BigNumber.from(Math.floor(Date.now() / 1000))
   const remainingDays = until.sub(nowSeconds).div(60 * 60 * 24) // 1e0
   const rewardsDurationDays = rewardsDuration.div(60 * 60 * 24) // 1e0
-  if (
-    remainingDays.lte(Zero) ||
-    rewardsDurationDays.eq(Zero) ||
-    sgtRewardsPerPeriod.eq(Zero) ||
-    totalStaked.eq(Zero)
-  ) {
-    return [Zero, userStakedAmount]
-  }
   const remainingRewards = remainingDays.mul(
     sgtRewardsPerPeriod.div(rewardsDurationDays),
   ) // 1e18
