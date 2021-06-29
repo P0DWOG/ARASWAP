@@ -71,8 +71,7 @@ const DepositPage = (props: Props): ReactElement => {
   return (
     <div className="deposit">
       {poolData?.name === ALETH_POOL_NAME &&
-        myShareData?.lpTokenBalance.gt(0) && (
-        )}
+        myShareData?.lpTokenBalance.gt(0)}
 
       <div className="content">
         <div className="left">
