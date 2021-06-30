@@ -84,8 +84,8 @@ export const BTC_SWAP_ADDRESSES: { [chainId in ChainId]: string } = {
 }
 
 export const VETH2_SWAP_ADDRESSES: { [chainId in ChainId]: string } = {
-  [ChainId.MAINNET]: "0xdec2157831D6ABC3Ec328291119cc91B337272b5",
-  [ChainId.HARDHAT]: "0x6F62d12568c81Dc0fb38426B7Cdba2d265f89B29",
+  [ChainId.MAINNET]: "0xdec2157831D6ABC3Ec328291119cc91B337272b",
+  [ChainId.HARDHAT]: "0x6F62d12568c81Dc0fb38426B7Cdba2d265f89B2",
 }
 
 export const ALETH_SWAP_ADDRESSES: { [chainId in ChainId]: string } = {
