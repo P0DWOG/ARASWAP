@@ -77,8 +77,8 @@ function PoolOverview({
         <div className="poolInfo">
           {Object.keys(poolData.aprs).map((key) => {
             const symbol = poolData.aprs[key as Partners]?.symbol as string
-            return poolData.aprs[key as Partners]?.apr.gt(Zero) ? (<div className="margin Apr" key={symbol}>
-              </div>
+            return poolData.aprs[key as Partners]?.apr.gt(Zero) ? (
+              <div className="margin Apr" key={symbol}></div>
             ) : null
           })}
 
