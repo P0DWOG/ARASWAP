@@ -46,8 +46,8 @@ ul {
   --background-element: rgba(213, 187, 222, 0.18);
   //--background-element-hover: rgba(399, 144, 177, 0.88);
   --background-element-hover: rgba(399, 144, 177, 0.88);
-  --background-main: #fffEFD url("../assets/bg.png") center/auto 60%
-    no-repeat scroll, local;
+  --background-main: rgb(190,255,191);
+  --background-main: linear-gradient(0deg, rgba(190,255,191,0.45702030812324934) 0%, rgba(149,222,255,0.3337710084033614) 25%, rgba(244,197,255,0.25253851540616246) 43%, rgba(244,197,255,0) 87%);
   --background-logo: #{$primary};
   --secondary-button: #{$light-blue};
   --outline: #000;
