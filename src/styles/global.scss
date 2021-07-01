@@ -46,8 +46,8 @@ ul {
   --background-element: rgba(213, 187, 222, 0.13);
   //--background-element-hover: rgba(399, 144, 177, 0.88);
   --background-element-hover: rgba(399, 144, 177, 0.88);
-  --background-main: rgb(210,105,245);
-  --background-main: linear-gradient(0deg, rgba(210,105,245,0.23012955182072825) 0%, rgba(255,178,245,0.14329481792717091) 43%, rgba(255,254,253,0) 91%);
+  --background-main: rgb(138,245,105);
+  --background-main: linear-gradient(0deg, rgba(138,245,105,0.23012955182072825) 0%, rgba(0,245,255,0.10127801120448177) 11%, rgba(255,178,245,0.14329481792717091) 36%, rgba(255,254,253,0) 91%);
   --background-logo: #{$primary};
   --secondary-button: #{$light-blue};
   --outline: #000;
