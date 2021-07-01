@@ -79,7 +79,7 @@ body.dark {
   --background-element: rgba(0, 0, 0, 0.56);
   --background-element-hover: rgba(0, 0, 0, 0.8);
   --background-main: #000 url("../assets/bg.png") center/auto 60% no-repeat
-    fixed;
+    scroll;
   --background-logo: #000;
   --secondary-button: #{$dark-purple};
   --outline: #000;
