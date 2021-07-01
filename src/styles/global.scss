@@ -47,7 +47,7 @@ ul {
   //--background-element-hover: rgba(399, 144, 177, 0.88);
   --background-element-hover: rgba(399, 144, 177, 0.88);
   --background-main: #fffEFD url("../assets/bg.png") center/auto 60%
-    no-repeat scroll;
+    no-repeat scroll, local;
   --background-logo: #{$primary};
   --secondary-button: #{$light-blue};
   --outline: #000;
@@ -79,7 +79,7 @@ body.dark {
   --background-element: rgba(0, 0, 0, 0.56);
   --background-element-hover: rgba(0, 0, 0, 0.8);
   --background-main: #000 url("../assets/bg.png") center/auto 60% no-repeat
-    scroll;
+    scroll, local;
   --background-logo: #000;
   --secondary-button: #{$dark-purple};
   --outline: #000;
