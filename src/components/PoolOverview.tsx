@@ -25,6 +25,7 @@ function PoolOverview({
   const { t } = useTranslation()
   const formattedData = {
     name: poolData.name,
+    emoj: poolData.emoj,
     reserve: commify(formatBNToString(poolData.reserve, 18, 2)),
     aprs: Object.keys(poolData.aprs).reduce((acc, key) => {
       const apr = poolData.aprs[key as Partners]?.apr
@@ -63,10 +64,7 @@ function PoolOverview({
         )}
         <div className="tokens">
           <span style={{ marginRight: "8px" }}>[</span>
-          {formattedData.tokens.map(({ symbol, icon }) => (
-            <div className="token" key={symbol}>
-              <img alt="icon" src={icon} />
-              <span>{symbol}</span>
+              <span>{formattedData.emoj}</span>
             </div>
           ))}
           <span style={{ marginLeft: "-8px" }}>]</span>
