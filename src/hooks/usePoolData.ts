@@ -33,6 +33,7 @@ export interface PoolDataType {
   adminFee: BigNumber
   aParameter: BigNumber
   apy: string // TODO: calculate
+  emoj: string
   name: string
   reserve: BigNumber
   swapFee: BigNumber
