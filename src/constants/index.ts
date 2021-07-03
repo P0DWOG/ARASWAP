@@ -346,7 +346,7 @@ export const POOLS_MAP: PoolsMap = {
   },
   [VETH2_POOL_NAME]: {
     name: VETH2_POOL_NAME,
-    emoj: "🤖",
+    emoj: "👻",
     addresses: VETH2_SWAP_ADDRESSES,
     lpToken: VETH2_SWAP_TOKEN,
     poolTokens: VETH2_POOL_TOKENS,
