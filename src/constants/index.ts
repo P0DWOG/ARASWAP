@@ -279,6 +279,7 @@ export const ALETH_POOL_TOKENS = [WETH, ALETH, SETH]
 
 export type Pool = {
   name: string
+  emoj: string
   lpToken: Token
   poolTokens: Token[]
   isSynthetic: boolean
@@ -294,6 +295,7 @@ export const POOLS_MAP: PoolsMap = {
     lpToken: BTC_SWAP_TOKEN,
     poolTokens: BTC_POOL_TOKENS,
     isSynthetic: true,
+    emoj: "👽",
   },
   [STABLECOIN_POOL_NAME]: {
     name: STABLECOIN_POOL_NAME,
@@ -301,6 +303,7 @@ export const POOLS_MAP: PoolsMap = {
     lpToken: STABLECOIN_SWAP_TOKEN,
     poolTokens: STABLECOIN_POOL_TOKENS,
     isSynthetic: false,
+    emoj: "👴",
   },
   [ALETH_POOL_NAME]: {
     name: ALETH_POOL_NAME,
@@ -308,6 +311,7 @@ export const POOLS_MAP: PoolsMap = {
     lpToken: ALETH_SWAP_TOKEN,
     poolTokens: ALETH_POOL_TOKENS,
     isSynthetic: true,
+    emoj: "🤖",
   },
 }
 
