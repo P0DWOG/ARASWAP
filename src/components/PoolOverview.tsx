@@ -63,7 +63,7 @@ function PoolOverview({
           </div>
         )}
         <div className="tokens">
-          <span style={{ marginRight: "8px" }}>[</span>
+          <span style={{ marginRight: "8px" }}>[{formattedData.emoj}</span>
           <span style={{ marginLeft: "-8px" }}>]</span>
         </div>
       </div>
