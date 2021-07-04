@@ -271,6 +271,7 @@ export default function usePoolData(
       }))
       const poolData = {
         name: poolName,
+        emoj: POOL.emoj,
         tokens: poolTokens,
         reserve: tokenBalancesUSDSum,
         totalLocked: totalLpTokenBalance,
