@@ -44,7 +44,7 @@ header.top {
 
     & > li {
       display: inline;
-      margin-right: 36px;
+      margin-right: 28px;
       @include breakpoint(lg) {
         margin-right: 28px;
       }
@@ -65,15 +65,15 @@ header.top {
         text-decoration: none;
         font-style: normal;
         font-weight: $normal;
-        font-size: 16px;
+        font-size: 20px;
         @include breakpoint(lg) {
-          font-size: 16px;
+          font-size: 20px;
         }
         @include breakpoint(md) {
-          font-size: 14px;
+          font-size: 18px;
         }
         @include breakpoint(sm) {
-          font-size: 12px;
+          font-size: 16px;
         }
         &:hover {
           opacity: 1;
