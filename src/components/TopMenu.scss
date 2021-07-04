@@ -65,15 +65,15 @@ header.top {
         text-decoration: none;
         font-style: normal;
         font-weight: $normal;
-        font-size: 20px;
+        font-size: 22px;
         @include breakpoint(lg) {
-          font-size: 20px;
+          font-size: 22px;
         }
         @include breakpoint(md) {
-          font-size: 18px;
+          font-size: 20px;
         }
         @include breakpoint(sm) {
-          font-size: 16px;
+          font-size: 18px;
         }
         &:hover {
           opacity: 1;
