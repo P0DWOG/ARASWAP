@@ -6,6 +6,7 @@ button.button {
   color: $text-black;
   font-weight: $bold;
   font-size: 16px;
+  font-family: $font-family;
   letter-spacing: 0.02em;
   cursor: pointer;
   box-shadow: var(--shadow);
