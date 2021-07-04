@@ -5,13 +5,13 @@ header.top {
   background-color: var(--background);
   height: 78px;
   padding-left: 26px;
-  padding-right: 26px;
+  padding-right: 16px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   @include breakpoint(sm) {
     padding-left: 26px;
-    padding-right: 26px;
+    padding-right: 16px;
   }
 
   h1 {
@@ -40,7 +40,7 @@ header.top {
     font-family: $font-family;
     list-style-type: none;
     padding: 0;
-    margin-right: 8px;
+    margin: 0;
 
     & > li {
       display: inline;
