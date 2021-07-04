@@ -25,7 +25,6 @@ function PoolOverview({
   const { t } = useTranslation()
   const formattedData = {
     name: poolData.name,
-    emoj: poolData.emoj,
     reserve: commify(formatBNToString(poolData.reserve, 18, 2)),
     aprs: Object.keys(poolData.aprs).reduce((acc, key) => {
       const apr = poolData.aprs[key as Partners]?.apr
@@ -66,6 +65,8 @@ function PoolOverview({
           <span style={{ marginRight: "8px" }}>[</span>
           <span style={{ marginLeft: "-8px" }}>]</span>
         </div>
+      </div>
+
       <div className="right">
         <div className="poolInfo">
           {Object.keys(poolData.aprs).map((key) => {
