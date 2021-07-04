@@ -72,6 +72,7 @@ const emptyPoolData = {
   adminFee: Zero,
   aParameter: Zero,
   apy: "",
+  emoj: "",
   name: "",
   reserve: Zero,
   swapFee: Zero,
