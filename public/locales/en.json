@@ -3,7 +3,7 @@
   "addLiquidity": "Add Liquidity",
   "adminFee": "Admin fee",
   "adminKeys": "Admin Keys",
-  "advancedOptions": "   🚀",
+  "advancedOptions": ". . . 🚀",
   "aParameter": "A parameter",
   "aParameterTooltip": "Amplification coefficient. Higher values widen the range of low-slippages swaps, while lower values help keep the pool's composition balanced.",
   "apy": "APY",
