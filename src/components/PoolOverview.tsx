@@ -71,8 +71,7 @@ function PoolOverview({
             </div>
           <span style={{ marginLeft: "-8px" }}>]</span>
         </div>
-      </div>
-    ))}
+      ))}
       <div className="right">
         <div className="poolInfo">
           {Object.keys(poolData.aprs).map((key) => {
