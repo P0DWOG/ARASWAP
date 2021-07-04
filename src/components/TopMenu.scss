@@ -6,8 +6,8 @@ header.top {
   height: 78px;
   //padding-left: 26px;
   //padding-right: 16px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 66px;
+  padding-right: 56px;
   display: flex;
   //justify-content: space-around;
   justify-content: space-evenly;
@@ -15,8 +15,8 @@ header.top {
   @include breakpoint(sm) {
     //padding-left: 26px;
     //padding-right: 16px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 36px;
+    padding-right: 26px;
   }
 
   h1 {
