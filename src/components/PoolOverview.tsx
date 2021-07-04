@@ -66,7 +66,6 @@ function PoolOverview({
           <span style={{ marginRight: "8px" }}>[</span>
               <span>{formattedData.emoj}</span>
             </div>
-          ))}
           <span style={{ marginLeft: "-8px" }}>]</span>
         </div>
       </div>
