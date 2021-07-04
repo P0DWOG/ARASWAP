@@ -21,7 +21,7 @@ function TopMenu({ activeTab }: Props): ReactElement {
       <h1>
         <Link to="/">
           //<img className="logo" alt="logo" src={logo} />
-          {t("👾")}
+          {t("confirmTransaction")}
         </Link>
       </h1>
 
