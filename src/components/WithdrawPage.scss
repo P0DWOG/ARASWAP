@@ -7,6 +7,7 @@ div.withdraw {
   color: var(--text);
   padding-bottom: 40px;
   box-sizing: border-box; // Make the padding included in height calculation
+  font-family: $font-family;
 
   .content {
     width: 888px;
