@@ -64,14 +64,8 @@ function PoolOverview({
         )}
         <div className="tokens">
           <span style={{ marginRight: "8px" }}>[</span>
-          {formattedData.tokens.map(({ symbol, icon }) => (
-            <div className="token" key={symbol}>
-              <img alt="icon" src={icon} />
-              <span>{symbol}</span>
-            </div>
           <span style={{ marginLeft: "-8px" }}>]</span>
         </div>
-      ))}
       <div className="right">
         <div className="poolInfo">
           {Object.keys(poolData.aprs).map((key) => {
