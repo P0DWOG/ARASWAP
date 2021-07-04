@@ -25,6 +25,7 @@ function PoolOverview({
   const { t } = useTranslation()
   const formattedData = {
     name: poolData.name,
+    emoj: poolData.emoj,
     reserve: commify(formatBNToString(poolData.reserve, 18, 2)),
     aprs: Object.keys(poolData.aprs).reduce((acc, key) => {
       const apr = poolData.aprs[key as Partners]?.apr
