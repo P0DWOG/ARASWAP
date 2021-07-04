@@ -39,8 +39,8 @@ header.top {
   ul.nav {
     font-family: $font-family;
     list-style-type: none;
-    padding: 0;
-    margin-left: 20;
+    padding-left: 16px;
+    margint: 0;
 
     & > li {
       display: inline;
