@@ -77,25 +77,25 @@ export const BRIDGE_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
 export const STABLECOIN_SWAP_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0x3911F80530595fBd01Ab1516Ab61255d75AEb066",
   [ChainId.HARDHAT]: "0x98A0Bc3f9FdAD482CB2e40dE1291f8b0A6FE1860",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0xbCED0cB1e8022869678d40b3c71FA7A443CA8090",
 }
 
 export const BTC_SWAP_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0x4f6A43Ad7cba042606dECaCA730d4CE0A57ac62e",
   [ChainId.HARDHAT]: "0x610178dA211FEF7D417bC0e6FeD39F05609AD788",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0x02ad8Da8cCa3764DFb62d749E51Cb3d4b35643ad",
 }
 
 export const VETH2_SWAP_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0xdec2157831D6ABC3Ec328291119cc91B337272b",
   [ChainId.HARDHAT]: "0x6F62d12568c81Dc0fb38426B7Cdba2d265f89B2",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0x2C019509326485AE234c6CA8a51c9F4A0F94f5fA",
 }
 
 export const ALETH_SWAP_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0xa6018520EAACC06C30fF2e1B3ee2c7c22e64196a",
   [ChainId.HARDHAT]: "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0x53434526fCB7a5FF358AB74C13C1c582BBE6Ab9e",
 }
 
 export const MERKLETREE_DATA: { [chainId in ChainId]: string } = {
@@ -109,7 +109,7 @@ export const STABLECOIN_SWAP_TOKEN_CONTRACT_ADDRESSES: {
 } = {
   [ChainId.MAINNET]: "0x76204f8CFE8B95191A3d1CfA59E267EA65e06FAC",
   [ChainId.HARDHAT]: "0x6D1c89F08bbB35d80B6E6b6d58D2bEFE021eFE8d",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0x09f0e9d602c9989B2C03983cA37E7fa18084C44B",
 }
 
 export const BTC_SWAP_TOKEN_CONTRACT_ADDRESSES: {
@@ -117,7 +117,7 @@ export const BTC_SWAP_TOKEN_CONTRACT_ADDRESSES: {
 } = {
   [ChainId.MAINNET]: "0xC28DF698475dEC994BE00C9C9D8658A548e6304F",
   [ChainId.HARDHAT]: "0x6F1216D1BFe15c98520CA1434FC1d9D57AC95321",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0x7546eC9bf608162117D9Ac6A3F7D50aaE9ea9E6B",
 }
 
 export const VETH2_SWAP_TOKEN_CONTRACT_ADDRESSES: {
@@ -125,7 +125,7 @@ export const VETH2_SWAP_TOKEN_CONTRACT_ADDRESSES: {
 } = {
   [ChainId.MAINNET]: "0xe37E2a01feA778BC1717d72Bd9f018B6A6B241D",
   [ChainId.HARDHAT]: "0xd44a47B19a7862709588D574f39480f9C4DED1A",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0x28B465383ab829adFf02794917cD2FB8d04b0902",
 }
 
 export const ALETH_SWAP_TOKEN_CONTRACT_ADDRESSES: {
@@ -133,7 +133,7 @@ export const ALETH_SWAP_TOKEN_CONTRACT_ADDRESSES: {
 } = {
   [ChainId.MAINNET]: "0xc9da65931ABf0Ed1b74Ce5ad8c041C4220940368",
   [ChainId.HARDHAT]: "0xAe367415f4BDe0aDEE3e59C35221d259f517413E",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0x13e0d50308C01cf5BdA4b64CcBCceF0C6B9710DF",
 }
 
 export const BTC_SWAP_TOKEN = new Token(
@@ -176,7 +176,7 @@ export const ALETH_SWAP_TOKEN = new Token(
 const DAI_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0x6B175474E89094C44Da98b954EedeAC495271d0F",
   [ChainId.HARDHAT]: "0xA51c1fc2f0D1a1b8494Ed1FE312d7C3a78Ed91C0",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0x8C924e41d0624Ae6E7DB09fc93BBfB324c31BE0C",
 }
 export const DAI = new Token(
   DAI_CONTRACT_ADDRESSES,
@@ -190,7 +190,7 @@ export const DAI = new Token(
 const USDC_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
   [ChainId.HARDHAT]: "0x9A676e781A523b5d0C0e43731313A708CB607508",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0xA4fe4981f7550884E7E6224F0c78245DC145b2F2",
 }
 export const USDC = new Token(
   USDC_CONTRACT_ADDRESSES,
@@ -204,7 +204,7 @@ export const USDC = new Token(
 const USDT_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0xdac17f958d2ee523a2206206994597c13d831ec7",
   [ChainId.HARDHAT]: "0x959922bE3CAee4b8Cd9a407cc3ac1C251C2007B1",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0x0593d1b92e8Ba6bBC428923245891efF0311Fa15",
 }
 export const USDT = new Token(
   USDT_CONTRACT_ADDRESSES,
@@ -221,7 +221,7 @@ export const STABLECOIN_POOL_TOKENS = [DAI, USDC, USDT]
 const TBTC_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0x8daebade922df735c38c80c7ebd708af50815faa",
   [ChainId.HARDHAT]: "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0x9F6aA48f852Dd928F53A7dd3dcd2AC96a76c8727",
 }
 export const TBTC = new Token(
   TBTC_CONTRACT_ADDRESSES,
@@ -235,7 +235,7 @@ export const TBTC = new Token(
 const WBTC_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
   [ChainId.HARDHAT]: "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0x7264594dFB80a150f80b2988862605dDfda53727",
 }
 export const WBTC = new Token(
   WBTC_CONTRACT_ADDRESSES,
@@ -249,7 +249,7 @@ export const WBTC = new Token(
 const RENBTC_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0xeb4c2781e4eba804ce9a9803c67d0893436bb27d",
   [ChainId.HARDHAT]: "0x0165878A594ca255338adfa4d48449f69242Eb8F",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0x79B92D075d72d639D46D30CE15e6DdDE50ad5890",
 }
 export const RENBTC = new Token(
   RENBTC_CONTRACT_ADDRESSES,
@@ -263,7 +263,7 @@ export const RENBTC = new Token(
 const SBTC_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0xfe18be6b3bd88a2d2a7f928d00292e7a9963cfc6",
   [ChainId.HARDHAT]: "0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0xAc2931cFA6ff57Aaf64B43DFdc5190ca3c341640",
 }
 export const SBTC = new Token(
   SBTC_CONTRACT_ADDRESSES,
@@ -280,7 +280,7 @@ export const BTC_POOL_TOKENS = [TBTC, WBTC, RENBTC, SBTC]
 const WETH_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
   [ChainId.HARDHAT]: "0x3Aa5ebB10DC797CAC828524e59A333d0A371443c",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0x0B68F3b6c7fc0b6dD4D9a2399C4AE35be060ba42",
 }
 export const WETH = new Token(
   WETH_CONTRACT_ADDRESSES,
@@ -294,7 +294,7 @@ export const WETH = new Token(
 const VETH2_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0x898BAD2774EB97cF6b94605677F43b41871410B1",
   [ChainId.HARDHAT]: "0x59b670e9fA9D0A427751Af201D676719a970857b",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0xd46Ea72ABf55699b17eAF529c6533e5c13F5E687",
 }
 export const VETH2 = new Token(
   VETH2_CONTRACT_ADDRESSES,
@@ -310,7 +310,7 @@ export const VETH2_POOL_TOKENS = [WETH]
 const ALETH_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0x0100546F2cD4C9D97f798fFC9755E47865FF7Ee6",
   [ChainId.HARDHAT]: "0x09635F643e140090A9A8Dcd712eD6285858ceBef",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0xaA91d3f2C53BDBEdd45FaB0308d0b51315Dc32E7",
 }
 export const ALETH = new Token(
   ALETH_CONTRACT_ADDRESSES,
@@ -324,7 +324,7 @@ export const ALETH = new Token(
 const SETH_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb",
   [ChainId.HARDHAT]: "0x67d269191c92Caf3cD7723F116c85e6E9bf55933",
-  [ChainId.ROPSTEN]: "",
+  [ChainId.ROPSTEN]: "0x82BD6d2A185ed1C48e01830853fEf7f4D02fF1cC",
 }
 export const SETH = new Token(
   SETH_CONTRACT_ADDRESSES,
