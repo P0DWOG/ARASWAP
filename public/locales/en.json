@@ -1,7 +1,7 @@
 {
   "account": "Account",
   "addLiquidity": "Add Liquidity",
-  "adminFee": "Admin fee",
+  "adminFee": "Admin Fee",
   "adminKeys": "Admin Keys",
   "advancedOptions": ". . . 🚀",
   "aParameter": "A parameter",
@@ -23,7 +23,7 @@
   "connectWallet": "Connect",
   "connectedWith": "Connected with",
   "copyAddress": "Copy Address",
-  "currencyReserves": "Currency reserves",
+  "currencyReserves": "Currency Reserves",
   "dailyVolume": "Daily volume",
   "deadline": "Txn Deadline",
   "deposit": "Deposit",
