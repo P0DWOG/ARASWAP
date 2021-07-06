@@ -84,6 +84,14 @@ const DepositPage = (props: Props): ReactElement => {
         myShareData?.lpTokenBalance.gt(0) && (
           <LPStakingBanner stakingLink={"https://app.gysr.io"} />
         )}
+      {poolData?.name === USD_POOL_NAME &&
+        myShareData?.lpTokenBalance.gt(0) && (
+          <LPStakingBanner stakingLink={"https://app.gysr.io"} />
+        )}
+      {poolData?.name === BTC_POOL_NAME &&
+        myShareData?.lpTokenBalance.gt(0) && (
+          <LPStakingBanner stakingLink={"https://app.gysr.io"} />
+        )}
 
       <div className="content">
         <div className="left">
