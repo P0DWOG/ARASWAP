@@ -1,6 +1,11 @@
 import "./DepositPage.scss"
 
-import { ALETH_POOL_NAME, VETH2_POOL_NAME, BTC_POOL_NAME, STABLECOIN_POOL_NAME } from "../constants"
+import { 
+  ALETH_POOL_NAME,
+  VETH2_POOL_NAME,
+  BTC_POOL_NAME,
+  STABLECOIN_POOL_NAME
+} from "../constants"
 import { Button, Center } from "@chakra-ui/react"
 import { PoolDataType, UserShareType } from "../hooks/usePoolData"
 import React, { ReactElement, useState } from "react"
@@ -84,7 +89,7 @@ const DepositPage = (props: Props): ReactElement => {
         myShareData?.lpTokenBalance.gt(0) && (
           <LPStakingBanner stakingLink={"https://app.gysr.io"} />
         )}
-      {poolData?.name === USD_POOL_NAME &&
+      {poolData?.name === STABLECOIN_POOL_NAME &&
         myShareData?.lpTokenBalance.gt(0) && (
           <LPStakingBanner stakingLink={"https://app.gysr.io"} />
         )}
