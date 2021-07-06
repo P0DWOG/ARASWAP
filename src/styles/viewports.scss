@@ -1,8 +1,8 @@
 /* Breakpoint sizes */
-$screen-xs-max: 100px;
-$screen-sm-max: 900px;
-$screen-md-max: 1200px;
-$screen-lg-max: 1800px;
+$screen-xs-max: 10px;
+$screen-sm-max: 10px;
+$screen-md-max: 10px;
+$screen-lg-max: 10px;
 
 /* Create the mixin */
 @mixin breakpoint($media) {
