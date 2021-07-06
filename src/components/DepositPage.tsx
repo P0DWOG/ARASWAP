@@ -1,10 +1,10 @@
 import "./DepositPage.scss"
 
-import { 
+import {
   ALETH_POOL_NAME,
-  VETH2_POOL_NAME,
   BTC_POOL_NAME,
-  STABLECOIN_POOL_NAME
+  VETH2_POOL_NAME,
+  STABLECOIN_POOL_NAME,
 } from "../constants"
 import { Button, Center } from "@chakra-ui/react"
 import { PoolDataType, UserShareType } from "../hooks/usePoolData"
