@@ -75,7 +75,7 @@ const DepositPage = (props: Props): ReactElement => {
       {poolData?.aprs?.keep?.apr.gt(Zero) &&
         myShareData?.lpTokenBalance.gt(0) && (
           <LPStakingBanner
-            stakingLink={"https://google.ca"}
+            stakingLink={"https://www.gysr.io/docs/pools"}
           />
         )}
       {poolData?.name === VETH2_POOL_NAME &&
