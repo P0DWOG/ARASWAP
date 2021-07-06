@@ -74,9 +74,7 @@ const DepositPage = (props: Props): ReactElement => {
       <TopMenu activeTab={"deposit"} />
       {poolData?.aprs?.keep?.apr.gt(Zero) &&
         myShareData?.lpTokenBalance.gt(0) && (
-          <LPStakingBanner
-            stakingLink={"https://www.gysr.io/docs/pools"}
-          />
+          <LPStakingBanner stakingLink={"https://www.gysr.io/docs/pools"}/>
         )}
       {poolData?.name === VETH2_POOL_NAME &&
         myShareData?.lpTokenBalance.gt(0) && (
