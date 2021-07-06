@@ -75,16 +75,16 @@ const DepositPage = (props: Props): ReactElement => {
       {poolData?.aprs?.keep?.apr.gt(Zero) &&
         myShareData?.lpTokenBalance.gt(0) && (
           <LPStakingBanner
-            stakingLink={"https://dashboard.keep.network/liquidity"}
+            stakingLink={"https://app.gysr.io"}
           />
         )}
       {poolData?.name === VETH2_POOL_NAME &&
         myShareData?.lpTokenBalance.gt(0) && (
-          <LPStakingBanner stakingLink={"https://www.sharedstake.org/earn"} />
+          <LPStakingBanner stakingLink={"https://app.gysr.io"} />
         )}
       {poolData?.name === ALETH_POOL_NAME &&
         myShareData?.lpTokenBalance.gt(0) && (
-          <LPStakingBanner stakingLink={"https://app.alchemix.fi/farms"} />
+          <LPStakingBanner stakingLink={"https://app.gysr.io"} />
         )}
 
       <div className="content">
