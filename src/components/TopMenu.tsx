@@ -6,6 +6,7 @@ import { Link } from "react-router-dom"
 import ThemeChanger from "./ThemeChanger"
 import Web3Status from "./Web3Status"
 import classNames from "classnames"
+import logo from "../assets/icons/logo.svg"
 import { useTranslation } from "react-i18next"
 
 interface Props {
@@ -18,7 +19,9 @@ function TopMenu({ activeTab }: Props): ReactElement {
   return (
     <header className="top">
       <h1>
-        <Link to="/"> {t("confirmTransaction")} </Link>
+        <Link to="/">
+          <img className="logo" alt="logo" src={logo} />
+        </Link>
       </h1>
 
       <ul className="nav">
