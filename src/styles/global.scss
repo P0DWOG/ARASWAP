@@ -40,6 +40,7 @@ ul {
   --primary-foreground: #000;
   --primary-background: #fff;
   --background: #FFFefd;
+  --background-back: #FFFefd;
   //--background: #ffffe9;
   --background-lightgrey: #dfdde3;
   --background-element: RGBA(213, 186, 219, 0.14);
@@ -78,6 +79,7 @@ body.dark {
   --primary-foreground: #fff;
   --primary-background: #000;
   --background: #000;
+  --background-back: #000;
   --background-lightgrey: #{$black80};
   --background-element: rgba(0, 0, 0, 0.56);
   --background-element-hover: rgba(399, 144, 177, 0.88);
