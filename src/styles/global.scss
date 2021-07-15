@@ -70,23 +70,6 @@ ul {
 
   --shadow: 0px 2px 8px rgba(39, 14, 1, 0.1);
   --shadow-hover: 2px 2px 12px rgba(68, 64, 64, 0.2);
-  
-  --background-main: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	--background-main-size: 400% 400%;
-	--animation: gradient 15s ease infinite;
-
-
-  @keyframes gradient {
-	  0% {
-		  background-main-position: 0% 50%;
-	  }
-	  50% {
-		  background-main-position: 100% 50%;
-	  }
-	  100% {
-		  background-main-position: 0% 50%;
-	  }
-  
 }
 
 // Dark mode themes
