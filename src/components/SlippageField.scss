@@ -38,6 +38,7 @@ div.slippageField {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: space-between;
     @include breakpoint(lg) {
       font-size: 12px;
     }
