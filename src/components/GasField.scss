@@ -32,6 +32,7 @@ div.gasField {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: space-between;
     @include breakpoint(md) {
       font-size: 11px;
     }
