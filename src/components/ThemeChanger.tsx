@@ -33,7 +33,7 @@ const ThemeChanger = (): ReactElement => {
           }
         }}
       >
-        {userDarkMode ? "☾" : "☀"}
+        {userDarkMode ? "☀️" : "☾"}
       </button>
     </div>
   )
