@@ -33,7 +33,7 @@ function TopMenu({ activeTab }: Props): ReactElement {
         <li></li>
         <li>
           <Link
-            to="/pools/usd"
+            to="/pools"
             className={classNames({ active: activeTab === "pools" })}
           >
             {t("pools")}
