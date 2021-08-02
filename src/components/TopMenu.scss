@@ -50,26 +50,26 @@ header.top {
 
     & > li {
       display: inline;
-      margin-right: 14px;
+      margin-right: auto;
       //margin-left: 14px;//28
       @include breakpoint(lg) {
-        margin-right: 14px;
+        margin-right: auto;
         //margin-left: 14px;//28
       }
       @include breakpoint(md) {
-        margin-right: 10px;
+        margin-right: auto;
         //margin-left: 10px;//20
       }
       @include breakpoint(sm) {
-        margin-right: 6px;
+        margin-right: auto;
         //margin-left: 6px;//12
       }
       @include breakpoint(xs) {
-        margin-right: 4px;
+        margin-right: auto;
         //margin-left: 4px;//8
       }
       &:last-child {
-        margin-right: 4px;
+        margin-right: auto;
         //margin-left: 4px;//0
       }
       a {
@@ -103,7 +103,7 @@ header.top {
     margin-left: 0.4em;
     width: 20%;
     @include breakpoint(md) {
-      margin-right: 0.2em;
+      margin-left: 0.2em;
     }
 
     .connection {
