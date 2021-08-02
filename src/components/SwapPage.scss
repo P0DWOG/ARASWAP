@@ -8,6 +8,7 @@ div.swapPage {
   font-size: 16px;
   font-family: $font-family;
   padding-bottom: 40px;
+  box-sizing: border-box;
 
   h3.swapTitle {
     font-weight: 500;
