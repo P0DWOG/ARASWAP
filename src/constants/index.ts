@@ -275,7 +275,7 @@ export const SBTC = new Token(
   true,
 )
 
-export const BTC_POOL_TOKENS = [DAI]//[TBTC, WBTC, RENBTC, SBTC]
+export const BTC_POOL_TOKENS = [DAI] //[TBTC, WBTC, RENBTC, SBTC]
 
 const WETH_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
@@ -335,7 +335,7 @@ export const SETH = new Token(
   sethLogo,
 )
 
-export const ALETH_POOL_TOKENS = [DAI]//[WETH, ALETH, SETH]
+export const ALETH_POOL_TOKENS = [DAI] //[WETH, ALETH, SETH]
 
 export type Pool = {
   name: string
