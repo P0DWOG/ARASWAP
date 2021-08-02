@@ -44,26 +44,26 @@ header.top {
   ul.nav {
     font-family: $font-family;
     list-style-type: none;
-    padding-left: 36px;
-    margin-left: 4px;
+    //padding-left: 36px;
+    //margin-left: 4px;
 
     & > li {
       display: inline;
-      margin-right: 28px;
+      margin-right: auto; //28
       @include breakpoint(lg) {
-        margin-right: 28px;
+        margin-right: auto; //28
       }
       @include breakpoint(md) {
-        margin-right: 20px;
+        margin-right: auto; //20
       }
       @include breakpoint(sm) {
-        margin-right: 12px;
+        margin-right: auto; //12
       }
       @include breakpoint(xs) {
-        margin-right: 8px;
+        margin-right: auto; //8
       }
       &:last-child {
-        margin-right: 0;
+        margin-right: auto; //0
       }
       a {
         color: var(--header-text);
