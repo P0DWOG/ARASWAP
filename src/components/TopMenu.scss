@@ -100,8 +100,11 @@ header.top {
     }
   }
   .walletStatus {
-    margin-left: auto;
+    margin-left: 0.4em;
     width: 20%;
+    @include breakpoint(md) {
+      margin-right: 0.2em;
+    }
 
     .connection {
       // padding: 8px;
