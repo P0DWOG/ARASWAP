@@ -24,8 +24,8 @@ const variantPrimary = (
       _disabled: disabled,
     },
     _active: {
-      color: "white",
-      bg: "purple.500",
+      color: "black",
+      bg: "gray",
     },
     _disabled: disabled,
   }
