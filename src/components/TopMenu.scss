@@ -3,15 +3,15 @@
 
 header.top {
   background-color: #1C00ff00;
-  height: 88px;
-  padding-left: 56px;
-  padding-right: 56px;
+  height: 68px;
+  padding-left: 46px;
+  padding-right: 46px;
   display: flex;
   justify-content: center;
   align-items: center;
   @include breakpoint(sm) {
-    padding-left: 56px;
-    padding-right: 70px;
+    padding-left: 46px;
+    padding-right: 50px;
   }
 
   h1 {
@@ -24,8 +24,8 @@ header.top {
       border-radius: 52px;
       display: inline-block;
       margin-right: 0.4em;
-      width: 54px;
-      height: 54px;
+      width: 44px;
+      height: 44px;
       @include breakpoint(md) {
         margin-right: 0.2em;
       }
