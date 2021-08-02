@@ -23,7 +23,6 @@ function TopMenu({ activeTab }: Props): ReactElement {
           <img className="logo" alt="logo" src={logo} />
         </Link>
       </h1>
-
       <ul className="nav">
         <li>
           <Link to="/" className={classNames({ active: activeTab === "swap" })}>
@@ -50,7 +49,6 @@ function TopMenu({ activeTab }: Props): ReactElement {
         </li>
       </ul>
       <Web3Status />
-      //<ThemeChanger />
     </header>
   )
 }
