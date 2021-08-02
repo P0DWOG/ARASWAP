@@ -20,7 +20,7 @@ const variantPrimary = (
     bg: "teal.500",
     _hover: {
       color: "white",
-      bg: "purple.500",
+      bg: "gray",
       _disabled: disabled,
     },
     _active: {
