@@ -46,25 +46,31 @@ header.top {
     list-style-type: none;
     padding-left: 16px;
     padding-right: 16px;
-    margin-left: 28px;
+    //margin-left: 28px;
 
     & > li {
       display: inline;
-      margin-right: auto; //28
+      margin-right: 14px;
+      margin-left: 14px;//28
       @include breakpoint(lg) {
-        margin-right: auto; //28
+        margin-right: 14px;
+        margin-left: 14px;//28
       }
       @include breakpoint(md) {
-        margin-right: auto; //20
+        margin-right: 10px;
+        margin-left: 10px;//20
       }
       @include breakpoint(sm) {
-        margin-right: auto; //12
+        margin-right: 6px;
+        margin-left: 6px;//12
       }
       @include breakpoint(xs) {
-        margin-right: auto; //8
+        margin-right: 4px;
+        margin-left: 4px;//8
       }
       &:last-child {
-        margin-right: auto; //0
+        margin-right: 4px;
+        margin-left: 4px;//0
       }
       a {
         color: var(--header-text);
