@@ -50,7 +50,7 @@ function TopMenu({ activeTab }: Props): ReactElement {
         </li>
       </ul>
       <Web3Status />
-      <ThemeChanger />
+      //<ThemeChanger />
     </header>
   )
 }
