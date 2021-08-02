@@ -44,7 +44,8 @@ header.top {
   ul.nav {
     font-family: $font-family;
     list-style-type: none;
-    //padding-left: 36px;
+    padding-left: 16px;
+    padding-right: 16px;
     //margin-left: 4px;
 
     & > li {
