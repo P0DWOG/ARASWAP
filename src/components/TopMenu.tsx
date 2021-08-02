@@ -28,7 +28,7 @@ function TopMenu({ activeTab }: Props): ReactElement {
             {t("swap")}
           </Link>
         </li>
-        <li>{t("   ")}</li>
+        <li></li>
         <li>
           <Link
             to="/pools/usd/deposit"
@@ -37,7 +37,7 @@ function TopMenu({ activeTab }: Props): ReactElement {
             {t("pools")}
           </Link>
         </li>
-        <li>{t("   ")}</li>
+        <li></li>
         <li>
           <Link
             to="/risk"
