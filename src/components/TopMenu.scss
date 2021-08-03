@@ -24,8 +24,8 @@ header.top {
       border-radius: 52px;
       display: inline-block;
       margin-right: auto;
-      width: 44px;
-      height: 44px;
+      width: 30px;
+      height: 30px;
       @include breakpoint(md) {
         margin-right: auto;
       }
@@ -99,7 +99,7 @@ header.top {
       }
     }
     img.logo {
-      height: 1.5em;
+      height: 30px;
     }
   }
 }
