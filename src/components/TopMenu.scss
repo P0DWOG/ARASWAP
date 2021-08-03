@@ -23,11 +23,11 @@ header.top {
       background-color: #1C00ff00;
       border-radius: 52px;
       display: inline-block;
-      margin-right: 0.4em;
+      margin-right: auto;
       width: 44px;
       height: 44px;
       @include breakpoint(md) {
-        margin-right: 0.2em;
+        margin-right: auto;
       }
       &:hover {
         cursor: pointer;
