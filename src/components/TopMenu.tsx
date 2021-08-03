@@ -19,7 +19,7 @@ function TopMenu({ activeTab }: Props): ReactElement {
     <header className="top">
       <h1>
         <Link to="/">
-          <img className="logo" alt="logo" src={logo} />
+          {t("givley.")} //<img className="logo" alt="logo" src={logo} />
         </Link>
       </h1>
       <ul className="nav">
