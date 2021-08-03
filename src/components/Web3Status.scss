@@ -3,7 +3,7 @@
 
 div.walletStatus {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   & > button {
     color: var(--text-darker);
     border: none;
