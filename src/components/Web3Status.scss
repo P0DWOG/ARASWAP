@@ -4,6 +4,7 @@
 div.walletStatus {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   & > button {
     color: var(--text-darker);
     border: none;
@@ -30,7 +31,7 @@ div.walletStatus {
     }
   }
   .noAccount {
-    height: 30px;
+    height: 20px;
     width: 60px;
     border: 1px solid var(--outline);
     border-radius: 5px;
