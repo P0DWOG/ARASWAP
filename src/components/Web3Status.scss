@@ -30,8 +30,8 @@ div.walletStatus {
     }
   }
   .noAccount {
-    height: 30px;
-    width: 100px;
+    height: 10px;
+    width: 60px;
     border: 0px solid var(--outline);
     border-radius: 8px;
     line-height: 40px;
@@ -42,7 +42,7 @@ div.walletStatus {
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 30px;
+      height: 10px;
       line-height: 18px;
       width: 60px;
     }
