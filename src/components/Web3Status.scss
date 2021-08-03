@@ -32,7 +32,7 @@ div.walletStatus {
   .noAccount {
     height: 40px;
     width: 100px;
-    border: 1px solid var(--outline);
+    border: 0px solid var(--outline);
     border-radius: 8px;
     line-height: 40px;
     color: var(--header-text);
@@ -54,7 +54,7 @@ div.walletStatus {
     &:focus,
     &:active {
       outline: none;
-      border: 1px solid var(--outline);
+      border: 0px solid var(--outline);
       transform: none;
       transition: none;
       cursor: pointer;
