@@ -10,9 +10,9 @@ div.walletStatus {
     padding: 0;
     background: none;
     font-family: $font-family;
-    font-size: 16px;
+    font-size: 15px;
     @include breakpoint(lg) {
-      font-size: 16px;
+      font-size: 15px;
     }
 
     &:hover,
@@ -33,7 +33,7 @@ div.walletStatus {
     height: 30px;
     width: 60px;
     border: 0px solid var(--outline);
-    border-radius: 8px;
+    border-radius: 5px;
     line-height: 40px;
     color: var(--header-text);
     font-weight: $normal;
