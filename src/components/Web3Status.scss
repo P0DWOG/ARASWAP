@@ -3,7 +3,7 @@
 
 div.walletStatus {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   & > button {
     color: var(--text-darker);
     border: none;
@@ -30,7 +30,7 @@ div.walletStatus {
     }
   }
   .noAccount {
-    height: 30px;
+    height: 16px;
     width: 60px;
     border: 0px solid var(--outline);
     border-radius: 8px;
@@ -41,8 +41,8 @@ div.walletStatus {
     @include breakpoint(lg) {
       display: flex;
       align-items: center;
-      justify-content: flex-end;
-      height: 30px;
+      justify-content: center;
+      height: 16px;
       line-height: 18px;
       width: 60px;
     }
