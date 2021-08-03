@@ -20,13 +20,12 @@ header.top {
     margin-right: auto;
 
     .logo {
-      background-color: #bbbbbb;
-      font-size: 20px;
-      border-radius: 52px;
+      background-color: #1C00ff00;
+      border-radius: 100px;
       display: inline-block;
       margin-right: auto;
-      width: 30px;
-      height: 30px;
+      width: 100px;
+      height: 100px;
       @include breakpoint(md) {
         margin-right: auto;
       }
@@ -100,7 +99,7 @@ header.top {
       }
     }
     img.logo {
-      height: 35px;
+      height: 30px;
     }
   }
 }
