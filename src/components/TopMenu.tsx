@@ -5,7 +5,6 @@ import React, { ReactElement } from "react"
 import { Link } from "react-router-dom"
 import Web3Status from "./Web3Status"
 import classNames from "classnames"
-import logo from "../assets/icons/logo.svg"
 import { useTranslation } from "react-i18next"
 
 interface Props {
