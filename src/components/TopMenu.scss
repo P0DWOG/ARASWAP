@@ -22,11 +22,11 @@ header.top {
     .logo {
       background-color: #1C00ff00;
       font-size: 20px;
-      border-radius: 72px;
+      border-radius: 52px;
       display: inline-block;
       margin-right: auto;
-      width: 32px;
-      height: 32px;
+      width: 30px;
+      height: 30px;
       @include breakpoint(md) {
         margin-right: auto;
       }
@@ -100,7 +100,7 @@ header.top {
       }
     }
     img.logo {
-      height: 30px;
+      height: 35px;
     }
   }
 }
