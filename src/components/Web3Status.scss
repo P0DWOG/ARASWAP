@@ -38,6 +38,7 @@ div.walletStatus {
     line-height: 40px;
     color: var(--header-text);
     font-weight: $normal;
+    align-items: center;
 
     @include breakpoint(lg) {
       display: flex;
