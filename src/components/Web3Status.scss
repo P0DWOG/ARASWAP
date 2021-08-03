@@ -41,7 +41,7 @@ div.walletStatus {
     @include breakpoint(lg) {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       height: 30px;
       line-height: 18px;
       width: 60px;
