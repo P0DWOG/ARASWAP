@@ -21,9 +21,9 @@ export function usePoolTokenBalances(): { [token: string]: BigNumber } | null {
 
       await ethcallProvider.init(library)
       // override the contract address when using hardhat
-      if (chainId == ChainId.HARDHAT) {
+      if (chainId == ChainId.matic) {
         ethcallProvider.multicallAddress =
-          "0xa85233C63b9Ee964Add6F2cffe00Fd84eb32338f"
+          "0x1b49c6514720a30E5bf4c22385bF142C2863fA10"
       }
 
       const tokens = Object.values(TOKENS_MAP)
