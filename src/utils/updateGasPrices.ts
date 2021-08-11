@@ -27,7 +27,7 @@ const fetchGasPricePOA = (): Promise<GenericGasReponse> =>
     .then((res) => res.json())
     .then((body: POAGasResponse) => {
       const { standard, fast, fastest, blocknumber } = body
-      if (blocknumber > 42) {
+      if (blocknumber != 42) {
         return {
           gasStandard: Math.round(standard),
           gasFast: Math.round(fast),
@@ -63,9 +63,9 @@ export default async function fetchGasPrices(
   }
   await retry(
     () =>
-      fetchGasPriceGasNow() // try gaspricenow first
+      fetchGasPricePOA() // try gaspricenow first
         .then(dispatchUpdate)
-        .catch(() => fetchGasPricePOA().then(dispatchUpdate)), // else fall back to poa before retrying
+        .catch(() => fetchGasPriceGasNow().then(dispatchUpdate)), // else fall back to poa before retrying
     {
       retries: 3,
     },
