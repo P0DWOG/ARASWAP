@@ -18,7 +18,7 @@ interface CoinGeckoReponse {
   }
 }
 const otherTokens = {
-  ETH: "ethereum",
+  ETH: "polygon",
   WETH: "ethereum",
   VETH2: "ethereum", // TODO: pull vETH2 price once it's added to coingecko
   BTC: "bitcoin",
