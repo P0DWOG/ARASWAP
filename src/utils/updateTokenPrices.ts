@@ -25,7 +25,6 @@ const otherTokens = {
   KEEP: "keep-network",
   SGT: "sharedstake-governance-token",
   ALCX: "alchemix",
-  MATIC: "polygon",
 }
 
 export default function fetchTokenPricesUSD(
