@@ -10,8 +10,8 @@ interface GenericGasReponse {
 interface POAGasResponse {
   standard: number
   fast: number
-  instant: number
-  health: boolean
+  fastest: number
+  blocknumber: number
 }
 
 interface GasNowGasResponse {
@@ -23,11 +23,11 @@ interface GasNowGasResponse {
   }
 }
 const fetchGasPricePOA = (): Promise<GenericGasReponse> =>
-  fetch("https://gasprice.poa.network/")
+  fetch("https://gasstation-mainnet.matic.network/")
     .then((res) => res.json())
     .then((body: POAGasResponse) => {
-      const { standard, fast, instant, health } = body
-      if (health) {
+      const { standard, fast, fastest, blocknumber } = body
+      if (blocknumber >= 1) {
         return {
           gasStandard: Math.round(standard),
           gasFast: Math.round(fast),
@@ -38,7 +38,7 @@ const fetchGasPricePOA = (): Promise<GenericGasReponse> =>
     })
 
 const fetchGasPriceGasNow = (): Promise<GenericGasReponse> =>
-  fetch("https://www.gasnow.org/api/v3/gas/price?utm_source=saddle")
+  fetch("https://www.gasnow.or/api/v3/gas/price?utm_source=saddle")
     .then((res) => res.json())
     .then((body: GasNowGasResponse) => {
       const {
