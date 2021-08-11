@@ -54,7 +54,7 @@ interface Transaction {
 
 export default function Transactions(): ReactElement {
   const SADDLE_SUBGRAPH_URL =
-    "https://api.thegraph.com/subgraphs/name/saddle-finance/saddle"
+    "https://api.thegraph.com/subgraphs/name/saddle-finance/saddl"
   const { t } = useTranslation()
   const { chainId, account } = useActiveWeb3React()
   const [transactionList, setTransactionList] = useState<Transaction[]>([])
