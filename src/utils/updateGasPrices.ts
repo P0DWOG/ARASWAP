@@ -38,7 +38,7 @@ const fetchGasPricePOA = (): Promise<GenericGasReponse> =>
     })
 
 const fetchGasPriceGasNow = (): Promise<GenericGasReponse> =>
-  fetch("https://www.gasnow.org/api/v3/gas/price?utm_source=saddle")
+  fetch("https://www.gasnow.or/api/v3/gas/price?utm_source=saddle")
     .then((res) => res.json())
     .then((body: GasNowGasResponse) => {
       const {
