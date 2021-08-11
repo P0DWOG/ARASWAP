@@ -1,6 +1,6 @@
 {
   "account": "Account",
-  "addLiquidity": "Add Liquidity",
+  "addLiquidity": "Open Portal",
   "adminFee": "Admin Fee",
   "adminKeys": "Admin Keys",
   "advancedOptions": ". . . 🚀",
@@ -15,7 +15,7 @@
   "changeAccount": "Change Account",
   "chooseToken": "Choose Token",
   "clear": "Clear",
-  "combinationOfAll": "Combination of all",
+  "combinationOfAll": "Combination",
   "confirmDeposit": "Confirm Deposit",
   "confirmSwap": "Transform",
   "confirmTransaction": "👾",
