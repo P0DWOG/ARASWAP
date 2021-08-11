@@ -381,7 +381,7 @@ export const POOLS_MAP: PoolsMap = {
   },
   [STABLECOIN_POOL_NAME]: {
     name: STABLECOIN_POOL_NAME,
-    emoj: "👴",
+    emoj: "🌘",
     addresses: STABLECOIN_SWAP_ADDRESSES,
     lpToken: STABLECOIN_SWAP_TOKEN,
     poolTokens: STABLECOIN_POOL_TOKENS,
