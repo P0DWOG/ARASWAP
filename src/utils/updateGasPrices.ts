@@ -27,7 +27,7 @@ const fetchGasPricePOA = (): Promise<GenericGasReponse> =>
     .then((res) => res.json())
     .then((body: POAGasResponse) => {
       const { standard, fast, fastest, blocknumber } = body
-      if (blocknumber >= 1) {
+      if (blocknumber > 42) {
         return {
           gasStandard: Math.round(standard),
           gasFast: Math.round(fast),
