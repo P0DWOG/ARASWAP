@@ -20,7 +20,7 @@ import wethLogo from "../assets/icons/weth.svg"
 
 export const NetworkContextName = "NETWORK"
 export const BTC_POOL_NAME = "BTC Portal "
-export const STABLECOIN_POOL_NAME = "USD Portal "
+export const STABLECOIN_POOL_NAME = "Earth Dollars (US)"
 export const VETH2_POOL_NAME = "vETH2 Portal "
 export const ALETH_POOL_NAME = "ETH Portal "
 export type PoolName =
