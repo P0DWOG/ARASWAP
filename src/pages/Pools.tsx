@@ -1,8 +1,8 @@
 import React, { ReactElement } from "react"
 
-import { STABLECOIN_POOL_NAME } from "../constants/index.ts"
 import PoolOverview from "../components/PoolOverview"
 import TopMenu from "../components/TopMenu"
+import { STABLECOIN_POOL_NAME } from "../constants/index.ts"
 import styles from "./Pools.module.scss"
 import usePoolData from "../hooks/usePoolData"
 
