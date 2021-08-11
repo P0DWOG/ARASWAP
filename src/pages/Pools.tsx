@@ -1,4 +1,4 @@
-import STABLECOIN_POOL_NAME from "../constants"
+import { STABLECOIN_POOL_NAME } from "../constants"
 import React, { ReactElement } from "react"
 
 import PoolOverview from "../components/PoolOverview"
