@@ -230,11 +230,22 @@ function buildTransactionData(
     : BigNumber.from(10).pow(18)
   const gasAmount = calculateGasEstimate("addLiquidity").mul(gasPrice) // units of gas * GWEI/Unit of gas
 
+  
+  const txnGasCost = {
+    amount: gasAmount,
+    valueUSD: tokenPricesUSD?.ETH
+      ? parseUnits(tokenPricesUSD.ETH.toFixed(2), 18) // USD / ETH  * 10^18
+          .mul(gasAmount) // GWEI
+          .div(BigNumber.from(10).pow(25)) // USD / ETH * GWEI * ETH / GWEI = USD
+      : null,
+  }
+  
   return {
     from,
     to,
     priceImpact,
     shareOfPool,
+    txnGasCost,
   }
 }
 
