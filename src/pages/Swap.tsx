@@ -520,8 +520,8 @@ function Swap(): ReactElement {
 
   const txnGasCost = {
     amount: gasAmount,
-    valueUSD: tokenPricesUSD?.ETH
-      ? parseUnits(tokenPricesUSD.ETH.toFixed(2), 18) // USD / ETH  * 10^18
+    valueUSD: tokenPricesUSD?.MATIC
+      ? parseUnits(tokenPricesUSD.MATIC.toFixed(2), 18) // USD / ETH  * 10^18
           .mul(gasAmount) // GWEI
           .div(BigNumber.from(10).pow(25)) // USD / ETH * GWEI * ETH / GWEI = USD
       : null,
