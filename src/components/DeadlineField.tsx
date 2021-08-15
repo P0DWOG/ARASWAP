@@ -34,7 +34,7 @@ export default function DeadlineField(): ReactElement {
             dispatch(updateTransactionDeadlineSelected(Deadlines.Ten))
           }}
         >
-          <span>5 {t("minutes")}</span>
+          <span>10 {t("minutes")}</span>
         </button>
         <button
           className={classNames({
@@ -44,14 +44,14 @@ export default function DeadlineField(): ReactElement {
             dispatch(updateTransactionDeadlineSelected(Deadlines.Thirty))
           }}
         >
-          <span>10 {t("minutes")}</span>
+          <span>30 {t("minutes")}</span>
         </button>
         <input
           type="text"
           className={classNames({
             selected: transactionDeadlineSelected === Deadlines.Custom,
           })}
-          placeholder="15"
+          placeholder="2"
           onClick={(): PayloadAction<Deadlines> =>
             dispatch(updateTransactionDeadlineSelected(Deadlines.Custom))
           }
