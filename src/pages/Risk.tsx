@@ -14,7 +14,7 @@ function Risk(): ReactElement {
       <div className="content">
         <p>
           {t("riskIntro")}{" "}
-          <a href="https://github.com/P0DWOG/ARASWAP-master">
+          <a href="https://github.com/MuneFinance/MuneFinance">
             {t("riskIntro2")}
           </a>{" "}
           {t("riskIntro3")}
@@ -22,7 +22,7 @@ function Risk(): ReactElement {
         <h3>{t("audits")}</h3>
         <p>
           {t("riskAudits")}{" "}
-          <a href="https://docs.openzeppelin.com/contracts/4.x">
+          <a href="https://app.gitbook.com/@mune-3/s/mune/">
             {t("riskAudits2")}
           </a>
           {"."}
