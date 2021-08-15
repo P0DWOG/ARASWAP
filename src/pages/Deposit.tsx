@@ -244,7 +244,6 @@ function buildTransactionData(
     to,
     priceImpact,
     shareOfPool,
-    txnGasCost,
   }
 }
 
