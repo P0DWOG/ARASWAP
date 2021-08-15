@@ -229,7 +229,6 @@ function buildTransactionData(
         .div(estDepositLPTokenAmount.add(poolData?.totalLocked))
     : BigNumber.from(10).pow(18)
   const gasAmount = calculateGasEstimate("addLiquidity").mul(gasPrice) // units of gas * GWEI/Unit of gas
-
   
   const txnGasCost = {
     amount: gasAmount,
@@ -239,7 +238,7 @@ function buildTransactionData(
           .div(BigNumber.from(10).pow(25)) // USD / ETH * GWEI * ETH / GWEI = USD
       : null,
   }
-  
+
   return {
     from,
     to,
