@@ -229,6 +229,21 @@ export const USDT = new Token(
   usdtLogo,
 )
 
+const MATIC_CONTRACT_ADDRESSES: { [chainId in ChainId]: string } = {
+  [ChainId.MAINNET]: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
+  [ChainId.HARDHAT]: "0x959922bE3CAee4b8Cd9a407cc3ac1C251C2007B1",
+  [ChainId.ROPSTEN]: "0x0593d1b92e8Ba6bBC428923245891efF0311Fa15",
+  [ChainId.MATIC]: "0x0000000000000000000000000000000000001010",
+}
+export const MATIC = new Token(
+  MATIC_CONTRACT_ADDRESSES,
+  18,
+  "MATIC",
+  "matic",
+  "matic",
+  usdtLogo,
+)
+
 export const STABLECOIN_POOL_TOKENS = [DAI, USDC, USDT]
 
 // Tokenized BTC
