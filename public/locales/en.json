@@ -84,7 +84,7 @@
   "riskIntro": "Welcome to Mune ! Before using the protocol, we highly recommend",
   "riskIntro2": "reading the code,",
   "riskIntro3": "and understanding the risks involved with being a Liquidity Provider (LP) and/or using the AMM to trade pegged value crypto assets.",
-  "riskLossOfPeg": "There is a chance that at some point in the future the community will vote to spend funds on for-profit activities. In order to combat this, for the first 24 months, the community will vote on which Charity to send the treasury to each quarter, however; the actual transfer will be handled by a multisig controlled by high networth individuals with no financial incentive to pirate the DAOs funds.",
+  "riskLossOfPeg": "With plans to transition to a DAO, there is a chance that at some point in the future the community will vote to spend funds on for-profit activities. In order to combat this, for the first 24 months, the community will vote on which Charity to send the treasury to each quarter, however; the actual transfer will be handled by a multisig controlled by high networth individuals with no financial incentive to pirate the reserve.",
   "route": "Route",
   "shareOfPool": "Share of Pool",
   "slippage": "Slippage",
