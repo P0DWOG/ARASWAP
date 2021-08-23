@@ -94,7 +94,7 @@ const DepositPage = (props: Props): ReactElement => {
           <LPStakingBanner
             stakingLink={
               "https://app.gysr.io/pool/0x3910aa5babae0468c246d859e7119565eb69fe5d"
-          } />
+            }/>
         )}
       {poolData?.name === BTC_POOL_NAME &&
         myShareData?.lpTokenBalance.gt(0) && (
