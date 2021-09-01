@@ -22,7 +22,7 @@ function Risk(): ReactElement {
         <h3>{t("audits")}</h3>
         <p>
           {t("riskAudits")}{" "}
-          <a href="https://app.gitbook.com/@mune-3/s/mune/">
+          <a href="https://docs.mune.finance">
             {t("riskAudits2")}
           </a>
           {"."}
