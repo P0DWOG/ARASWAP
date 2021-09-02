@@ -28,7 +28,7 @@ function PoolInfoCard({ data }: Props): ReactElement {
       ? commify(formatBNToString(data.aParameter, 0, 0))
       : null,
     virtualPrice: data?.virtualPrice
-      ? commify(formatBNToString(data.virtualPrice, 18, 5))
+      ? commify(formatBNToString(data.virtualPrice, 18, 8))
       : null,
     reserve: data?.reserve
       ? commify(formatBNToString(data.reserve, 18, 2))
