@@ -36,7 +36,9 @@ function Risk(): ReactElement {
         <h3>{t("lossOfPeg")}</h3>
         <p>
           {t("riskLossOfPeg")}
-          <a href="https://www.thegivingblock.com">{t("The Giving Block")}</a>
+          <a href="https://www.thegivingblock.com">
+            {t("The Giving Block")}
+          </a>
           {" "}
           {t("riskLossOfPeg2")}
         </p>
