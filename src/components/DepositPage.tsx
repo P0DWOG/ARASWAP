@@ -93,7 +93,7 @@ const DepositPage = (props: Props): ReactElement => {
         myShareData?.lpTokenBalance.gt(0) && (
           <LPStakingBanner
             stakingLink={
-              "https://app.gysr.io/pool/0x3910aa5babae0468c246d859e7119565eb69fe5d"
+              "https://app.gysr.io/pool/0x83e4e27b5a410343b7ee84b684b35b134f8a8528"
             }
           />
         )}
