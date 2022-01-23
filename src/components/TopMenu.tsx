@@ -32,7 +32,7 @@ function TopMenu(): ReactElement {
         data-testid="topMenuContainer"
         sx={{ mx: { md: 7 }, mt: { md: 3 } }}
       >
-        <Hidden only='xl'>
+        <Hidden only="xl">
           <Box flex={1} flexBasis="30%">
             <Link to="/">
               <SaddleLogo />
