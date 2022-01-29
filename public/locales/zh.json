@@ -63,7 +63,7 @@
   "liquidityUtilization": "流动性利用率",
   "lossOfPeg": "永久丧失挂钩",
   "lpAvailable": null,
-  "lpMustStakeForRewards": "流动性提供者们：您需要质押流动性通证（LP token）来获取KEEP代币奖励",
+  "lpMustStakeForRewards": "流动性提供者们：您需要质押流动性通证（LPtoken）来获取KEEP代币奖励",
   "lpStaked": null,
   "lpTokens": "资金池LP代币",
   "max": "上限",
