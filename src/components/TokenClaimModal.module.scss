@@ -25,9 +25,9 @@
   background: var(--primary-background);
   background: linear-gradient(
     0deg,
-    var(--emphasis-2) 0%,
-    var(--emphasis-1) 40%,
-    var(--primary-background) 100%
+    $primary-blue-light 0%,
+    $light-blue 40%,
+    white 100%
   );
 }
 
@@ -39,9 +39,9 @@
   background: var(--primary-background);
   background: linear-gradient(
     0deg,
-    var(--emphasis-2) 0%,
-    var(--emphasis-1) 40%,
-    var(--primary-background) 100%
+    $primary-blue-light 0%,
+    $light-blue 40%,
+    white 100%
   );
   display: flex;
   justify-content: center;
