@@ -98,7 +98,7 @@
   "reviewDeposit": "检查存款",
   "reviewMigration": "检查迁移",
   "reviewSwap": "检查交易",
-  "risk": "Risk",
+  "risk": "风险",
   "riskAdminKeys": "The admin is capable of pausing new deposits and trades in case of technical emergencies. Users will always be able to withdraw their funds, regardless of new deposits being paused. The admin is also capable of changing the swap/admin fees, as well as the per pool/account deposit limits.",
   "riskAudits": "Information can be found in our",
   "riskAudits2": "Docs",
