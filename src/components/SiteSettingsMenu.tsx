@@ -164,21 +164,21 @@ function ThemeSection(): ReactElement {
   )
 }
 
- function MainNet(): ReactElement {
-   const { t } = useTranslation()
+function MainNet(): ReactElement {
+  const { t } = useTranslation()
 
-   const handleRedirection = () => {
-     window.open("https://legacy.mune.finance/#/")
-   }
-   return (
-     <div className={styles.section}>
-       <div
-         data-testid="mainNetRedirect"
-         className={styles.sectionTitle}
-         onClick={handleRedirection}
-       >
-         <span>{t("Legacy App")}</span>
-       </div>
-     </div>
-   )
- }
+  const handleRedirection = () => {
+    window.open("https://legacy.mune.finance/#/")
+  }
+  return (
+    <div className={styles.section}>
+      <div
+        data-testid="mainNetRedirect"
+        className={styles.sectionTitle}
+        onClick={handleRedirection}
+      >
+        <span>{t("Legacy App")}</span>
+      </div>
+    </div>
+  )
+}
