@@ -83,7 +83,7 @@
   "riskAudits4": "Using Mune as an exchange user should be significantly less risky, but keep in mind there are still some risks.",
   "riskIntro": "Welcome to Mune ! Before using the protocol, we highly recommend",
   "riskIntro2": "reading the code,",
-  "riskIntro3": "and understanding the risks involved with being a Liquidity Provider (LP) and/or using the AMM to trade pegged value crypto assets.",
+  "riskIntro3": "and understanding the risks involved with being a Liquidity Provider (LP) or using the AMM to trade pegged value crypto assets.",
   "riskLossOfPeg": "We hear you. The internet is a scary place; filled with all manner of snake-oil salesmen. But the children still need you-- please visit ",
   "riskLossOfPeg2": "to make a donation while you get used to us.",
   "route": "Route",
