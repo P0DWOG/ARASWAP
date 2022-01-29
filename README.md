@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/saddle-finance/saddle-frontend/workflows/CI/badge.svg)](https://github.com/saddle-finance/saddle-frontend/actions?query=workflow%3ACI)
 
-An open source UI for Saddle 🤠
+An open source UI for Saddle 
 
 The UI is deployed on IPFS and accessible at
 [saddle.exchange](https://saddle.exchange/#/) or
