@@ -17,8 +17,8 @@ export default function SiteSettingsMenu(): ReactElement {
       <LanguageSection key="language" />
       <Divider />
       <ThemeSection key="theme" />
-      {/* <Divider /> */}
-      {/* <MainNet key="mainnet" /> */}
+      <Divider />
+      <MainNet key="mainnet" />
       {IS_SDL_LIVE && <Divider />}
       {IS_SDL_LIVE && <AddTokenSection key="token" />}
     </div>
