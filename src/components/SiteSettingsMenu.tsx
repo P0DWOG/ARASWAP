@@ -86,7 +86,9 @@ function NetworkSection(): ReactElement {
   const { t } = useTranslation()
   const { chainId: activeChainId, library, account } = useActiveWeb3React()
   const [isNetworkVisible, setIsNetworkVisible] = useState(false)
-  const networks = [...(IS_L2_SUPPORTED ? [ChainId.POLYGON] : [])]
+  const networks = [
+    ...(IS_L2_SUPPORTED ? [ChainId.POLYGON], [ChainId.MATICMUMBAI] : []),
+  ]
 
   return (
     <div data-testid="networkMenuContainer" className={styles.section}>
