@@ -87,7 +87,7 @@ function NetworkSection(): ReactElement {
   const { chainId: activeChainId, library, account } = useActiveWeb3React()
   const [isNetworkVisible, setIsNetworkVisible] = useState(false)
   const networks = [
-    ...(IS_L2_SUPPORTED ? [ChainId.POLYGON], [ChainId.MATICMUMBAI] : []),
+    ...(IS_L2_SUPPORTED ? [ChainId.POLYGON, ChainId.MATICMUMBAI] : []),
   ]
 
   return (
