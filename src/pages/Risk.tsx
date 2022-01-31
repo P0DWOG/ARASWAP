@@ -10,7 +10,7 @@ function Risk(): ReactElement {
   return (
     <div className="riskpage">
       <div className="content">
-        <h3 className="title">Risk</h3>
+        <h3 className="title"> </h3>
         <p data-testid="risk-intro">
           {t("riskIntro")}{" "}
           <a href="https://github.com/MuneFinance/MuneFinance">
