@@ -144,25 +144,6 @@ function ReviewDeposit({
             {deadline} {t("minutes")}
           </span>
         </div>
-        <div className="depositInfoItem">
-          <span className="label">{t("rates")}</span>
-          <div className="rates value">
-            {transactionData.from.items.map(
-              ({ token, singleTokenPriceUSD }) => (
-                <span key={token.symbol}>
-                  1 {token.symbol} = $
-                  {commify(formatBNToString(singleTokenPriceUSD, 18, 2))}
-                </span>
-              ),
-            )}
-            {[transactionData.to.item].map(({ token, singleTokenPriceUSD }) => (
-              <span key={token.symbol}>
-                1 {token.symbol} = $
-                {commify(formatBNToString(singleTokenPriceUSD, 18, 2))}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
       {isHighPriceImpactTxn && (
         <HighPriceImpactConfirmation
