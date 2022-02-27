@@ -144,7 +144,7 @@ function ReviewDeposit({
             {deadline} {t("minutes")}
           </span>
         </div>
-        {/* <div className="depositInfoItem">
+        /** <div className="depositInfoItem">
           <span className="label">{t("rates")}</span>
           <div className="rates value">
             {transactionData.from.items.map(
@@ -171,7 +171,7 @@ function ReviewDeposit({
             setHasConfirmedHighPriceImpact((prevState) => !prevState)
           }
         />
-      )} */}
+      )} */
       <div className="bottom">
         <p>{t("estimatedOutput")}</p>
         <div className="buttonWrapper">
