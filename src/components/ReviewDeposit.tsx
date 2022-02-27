@@ -144,7 +144,7 @@ function ReviewDeposit({
             {deadline} {t("minutes")}
           </span>
         </div>
-//        <div className="depositInfoItem">
+        <div className="depositInfoItem">
 //          <span className="label">{t("rates")}</span>
 //          <div className="rates value">
 //            {transactionData.from.items.map(
@@ -162,8 +162,8 @@ function ReviewDeposit({
 //              </span>
 //            ))}
 //          </div>
-//        </div>
-//      </div>
+        </div>
+      </div>
       {isHighPriceImpactTxn && (
         <HighPriceImpactConfirmation
           checked={hasConfirmedHighPriceImpact}
