@@ -163,7 +163,7 @@ function ReviewDeposit({
 //            ))}
 //          </div>
 //        </div>
-      </div>
+//      </div>
       {isHighPriceImpactTxn && (
         <HighPriceImpactConfirmation
           checked={hasConfirmedHighPriceImpact}
