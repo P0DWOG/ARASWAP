@@ -162,7 +162,7 @@ function ReviewDeposit({
 //              </span>
 //            ))}
 //          </div>
-        </div>
+//        </div>
       </div>
       {isHighPriceImpactTxn && (
         <HighPriceImpactConfirmation
