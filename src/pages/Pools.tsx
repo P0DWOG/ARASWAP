@@ -4,7 +4,9 @@ import {
   BTC_POOL_NAME,
   BTC_POOL_V2_NAME,
   D4_POOL_NAME,
+  DAI_METAPOOL_NAME,
   FRAX_ARB_USD_POOL_V2_NAME,
+  POLY_USD_POOL_V2_NAME,
   POOLS_MAP,
   PoolName,
   PoolTypes,
@@ -14,6 +16,7 @@ import {
   SUSD_METAPOOL_V2_NAME,
   TBTC_METAPOOL_NAME,
   TBTC_METAPOOL_V2_NAME,
+  USDT_METAPOOL_NAME,
   VETH2_POOL_NAME,
   WCUSD_METAPOOL_NAME,
   WCUSD_METAPOOL_V2_NAME,
@@ -47,6 +50,8 @@ function Pools(): ReactElement | null {
   const [susdPoolV2Data, susdV2UserShareData] = usePoolData(
     SUSD_METAPOOL_V2_NAME,
   )
+  const [daiPoolData, daiUserShareData] = usePoolData(DAI_METAPOOL_NAME)
+  const [usdtPoolData, usdtUserShareData] = usePoolData(USDT_METAPOOL_NAME)
   const [tbtcPoolData, tbtcUserShareData] = usePoolData(TBTC_METAPOOL_NAME)
   const [tbtcPoolV2Data, tbtcV2UserShareData] = usePoolData(
     TBTC_METAPOOL_V2_NAME,
@@ -59,6 +64,9 @@ function Pools(): ReactElement | null {
   const [arbUsdPoolData, arbUsdUserShareData] = usePoolData(ARB_USD_POOL_NAME)
   const [fraxArbUsdPoolV2Data, fraxArbUsdV2UserShareData] = usePoolData(
     FRAX_ARB_USD_POOL_V2_NAME,
+  )
+  const [polyUsdPoolV2Data, polyUsdV2UserShareData] = usePoolData(
+    POLY_USD_POOL_V2_NAME,
   )
   const [currentModal, setCurrentModal] = useState<string | null>(null)
   const approveAndMigrate = useApproveAndMigrate()
@@ -128,6 +136,13 @@ function Pools(): ReactElement | null {
         userShareData: usdV2UserShareData,
         poolRoute: "/pools/usdv2",
       }
+    } else if (poolName === POLY_USD_POOL_V2_NAME) {
+      return {
+        name: POLY_USD_POOL_V2_NAME,
+        poolData: polyUsdPoolV2Data,
+        userShareData: polyUsdV2UserShareData,
+        poolRoute: "/pools/muneusdv2",
+      }
     } else if (poolName === SUSD_METAPOOL_NAME) {
       return {
         name: SUSD_METAPOOL_NAME,
@@ -141,6 +156,20 @@ function Pools(): ReactElement | null {
         poolData: susdPoolV2Data,
         userShareData: susdV2UserShareData,
         poolRoute: "/pools/munefrax",
+      }
+    } else if (poolName === DAI_METAPOOL_NAME) {
+      return {
+        name: DAI_METAPOOL_NAME,
+        poolData: daiPoolData,
+        userShareData: daiUserShareData,
+        poolRoute: "/pools/munedai",
+      }
+    } else if (poolName === USDT_METAPOOL_NAME) {
+      return {
+        name: USDT_METAPOOL_NAME,
+        poolData: usdtPoolData,
+        userShareData: usdtUserShareData,
+        poolRoute: "/pools/muneusdt",
       }
     } else if (poolName === TBTC_METAPOOL_NAME) {
       return {
