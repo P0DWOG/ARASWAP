@@ -947,6 +947,7 @@ export const POOLS_MAP: PoolsMap = {
     isSynthetic: false,
     type: PoolTypes.USD,
     route: "muneusd",
+    isOutdated: true,
     rewardPids: buildPids({ [ChainId.MATICMUMBAI]: 1, [ChainId.POLYGON]: 1 }),
   },
   [POLY_USD_POOL_V2_NAME]: {
@@ -970,6 +971,7 @@ export const POOLS_MAP: PoolsMap = {
     underlyingPoolTokens: SUSD_UNDERLYING_POOL_TOKENS,
     underlyingPool: STABLECOIN_POOL_V2_NAME,
     route: "munefrax",
+    isOutdated: true,
     rewardPids: buildPids({ [ChainId.MATICMUMBAI]: 2, [ChainId.POLYGON]: 2 }),
   },
   [DAI_METAPOOL_NAME]: {
