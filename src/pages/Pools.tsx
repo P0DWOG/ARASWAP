@@ -134,7 +134,7 @@ function Pools(): ReactElement | null {
         name: POLY_USD_POOL_NAME,
         poolData: polyUsdPoolData,
         userShareData: polyUsdUserShareData,
-        poolRoute: "/pools/muneusdv2",
+        poolRoute: "/pools/muneusd",
       }
     } else if (poolName === SUSD_METAPOOL_NAME) {
       return {
