@@ -1,12 +1,10 @@
 import {
   ALETH_POOL_NAME,
-  ARB_USD_POOL_NAME,
   BTC_POOL_NAME,
   BTC_POOL_V2_NAME,
   D4_POOL_NAME,
   DAI_METAPOOL_NAME,
-  FRAX_ARB_USD_POOL_V2_NAME,
-  POLY_USD_POOL_V2_NAME,
+  POLY_USD_POOL_NAME,
   POOLS_MAP,
   PoolName,
   PoolTypes,
@@ -61,13 +59,8 @@ function Pools(): ReactElement | null {
   const [wcusdPoolV2Data, wcusdV2UserShareData] = usePoolData(
     WCUSD_METAPOOL_V2_NAME,
   )
-  const [arbUsdPoolData, arbUsdUserShareData] = usePoolData(ARB_USD_POOL_NAME)
-  const [fraxArbUsdPoolV2Data, fraxArbUsdV2UserShareData] = usePoolData(
-    FRAX_ARB_USD_POOL_V2_NAME,
-  )
-  const [polyUsdPoolV2Data, polyUsdV2UserShareData] = usePoolData(
-    POLY_USD_POOL_V2_NAME,
-  )
+  const [polyUsdPoolData, polyUsdUserShareData] =
+    usePoolData(POLY_USD_POOL_NAME)
   const [currentModal, setCurrentModal] = useState<string | null>(null)
   const approveAndMigrate = useApproveAndMigrate()
   const [activeMigration, setActiveMigration] = useState<{
@@ -136,11 +129,11 @@ function Pools(): ReactElement | null {
         userShareData: usdV2UserShareData,
         poolRoute: "/pools/usdv2",
       }
-    } else if (poolName === POLY_USD_POOL_V2_NAME) {
+    } else if (poolName === POLY_USD_POOL_NAME) {
       return {
-        name: POLY_USD_POOL_V2_NAME,
-        poolData: polyUsdPoolV2Data,
-        userShareData: polyUsdV2UserShareData,
+        name: POLY_USD_POOL_NAME,
+        poolData: polyUsdPoolData,
+        userShareData: polyUsdUserShareData,
         poolRoute: "/pools/muneusdv2",
       }
     } else if (poolName === SUSD_METAPOOL_NAME) {
@@ -198,20 +191,6 @@ function Pools(): ReactElement | null {
         poolData: wcusdPoolV2Data,
         userShareData: wcusdV2UserShareData,
         poolRoute: "/pools/wcusdv2",
-      }
-    } else if (poolName === ARB_USD_POOL_NAME) {
-      return {
-        name: ARB_USD_POOL_NAME,
-        poolData: arbUsdPoolData,
-        userShareData: arbUsdUserShareData,
-        poolRoute: "/pools/arbusd",
-      }
-    } else if (poolName === FRAX_ARB_USD_POOL_V2_NAME) {
-      return {
-        name: FRAX_ARB_USD_POOL_V2_NAME,
-        poolData: fraxArbUsdPoolV2Data,
-        userShareData: fraxArbUsdV2UserShareData,
-        poolRoute: "/pools/muneusd",
       }
     } else {
       return {
